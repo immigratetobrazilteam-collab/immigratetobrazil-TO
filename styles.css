@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: Sans Serif, sans-serif;
+    background: #E0FFFF;
+    color: #006400;
+}
+
+h1, h2 {
+    font-family: Waterfall, serif;
+    color: #00CED1;
+}
+
+a {
+    color: #228B22;
+}
+
+section {
+    padding: 3rem;
+}
