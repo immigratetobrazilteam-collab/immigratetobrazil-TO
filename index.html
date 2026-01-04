@@ -596,25 +596,24 @@
 
     <!-- LEFT COLUMN: PAGE IDENTITY -->
     <div class="column column-left page-identity">
-      <h2>Immigrate to { state.name }</h2>
-      <p><strong>State:</strong> { state.name }</p>
-      <p><strong>Capital:</strong> { state.capital }</p>
-      <p><strong>Region:</strong> { state.region }</p>
-      <p><strong>Timezone:</strong> { state.timezone }</p>
+      <h2>Immigrate to {state.name}</h2>
+      <p><strong>State:</strong> {state.name}</p>
+      <p><strong>Capital:</strong> {state.capital}</p>
+      <p><strong>Region:</strong> {state.region}</p>
+      <p><strong>Timezone:</strong> {state.timezone}</p>
     </div>
 
     <!-- RIGHT COLUMN: INTERACTIVE MAP -->
     <div class="column column-right state-map">
-      <h3>{ state.name } on the Map</h3>
+      <h3>{state.name} on the Map</h3>
 
-      <!-- Map container (Leaflet / SVG / JS driven) -->
-      <div 
+      <div
         id="state-map"
         class="interactive-map"
-        data-state-code="{ state.code }"
-        data-lat="{ state.coordinates.lat }"
-        data-lng="{ state.coordinates.lng }"
-        data-zoom="{ state.map_zoom }"
+        data-state-code="{state.code}"
+        data-lat="{state.coordinates.lat}"
+        data-lng="{state.coordinates.lng}"
+        data-zoom="{state.map_zoom}"
       >
         <!-- JS will mount the map here -->
       </div>
@@ -630,58 +629,53 @@
 
   <div class="container">
 
-    <h2>Cost of Living in { state.name }</h2>
+    <h2>Cost of Living in {state.name}</h2>
     <p class="section-intro">
-      Estimated monthly costs based on typical expenses in { state.capital }.
+      Estimated monthly costs based on typical expenses in {state.capital}.
       Adjust the values to see how your budget may change.
     </p>
 
-    <!-- INTERACTIVE COST MODULE -->
-    <div 
+    <div
       class="cost-widget"
-      data-currency="{ state.currency }"
+      data-currency="{state.currency}"
     >
 
-      <!-- Housing -->
       <div class="cost-row">
         <label>Rent (1-bedroom)</label>
-        <input 
-          type="range" 
-          min="{ state.cost_of_living.rent.min }"
-          max="{ state.cost_of_living.rent.max }"
-          value="{ state.cost_of_living.rent.avg }"
+        <input
+          type="range"
+          min="{state.cost_of_living.rent.min}"
+          max="{state.cost_of_living.rent.max}"
+          value="{state.cost_of_living.rent.avg}"
           data-cost="rent"
         >
         <span class="cost-value" data-output="rent"></span>
       </div>
 
-      <!-- Food -->
       <div class="cost-row">
         <label>Food (monthly)</label>
-        <input 
-          type="range" 
-          min="{ state.cost_of_living.food.min }"
-          max="{ state.cost_of_living.food.max }"
-          value="{ state.cost_of_living.food.avg }"
+        <input
+          type="range"
+          min="{state.cost_of_living.food.min}"
+          max="{state.cost_of_living.food.max}"
+          value="{state.cost_of_living.food.avg}"
           data-cost="food"
         >
         <span class="cost-value" data-output="food"></span>
       </div>
 
-      <!-- Transport -->
       <div class="cost-row">
         <label>Transportation</label>
-        <input 
-          type="range" 
-          min="{ state.cost_of_living.transport.min }"
-          max="{ state.cost_of_living.transport.max }"
-          value="{ state.cost_of_living.transport.avg }"
+        <input
+          type="range"
+          min="{state.cost_of_living.transport.min}"
+          max="{state.cost_of_living.transport.max}"
+          value="{state.cost_of_living.transport.avg}"
           data-cost="transport"
         >
         <span class="cost-value" data-output="transport"></span>
       </div>
 
-      <!-- TOTAL -->
       <div class="cost-total">
         <strong>Total Monthly Estimate:</strong>
         <span id="cost-total-value"></span>
