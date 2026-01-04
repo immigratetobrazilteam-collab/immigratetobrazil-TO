@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    font-family: Sans Serif, sans-serif;
+    font-family: Sans Serif;
     background: #E0FFFF;
     color: #006400;
 }
 h1, h2 {
-    font-family: Waterfall, serif;
+    font-family: Waterfall;
     color: #00CED1;
 }
 a {
