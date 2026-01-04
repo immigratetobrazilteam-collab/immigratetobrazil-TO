@@ -587,6 +587,109 @@
     </div>
 </section>
 
+<!-- ===================================================== -->
+<!-- PAGE IDENTITY + MAP (TWO COLUMN LAYOUT) -->
+<!-- ===================================================== -->
+<section class="page-identity-map">
+
+  <div class="container two-column-grid">
+
+    <!-- LEFT COLUMN: PAGE IDENTITY -->
+    <div class="column column-left page-identity">
+      <h2>Immigrate to { state.name }</h2>
+      <p><strong>State:</strong> { state.name }</p>
+      <p><strong>Capital:</strong> { state.capital }</p>
+      <p><strong>Region:</strong> { state.region }</p>
+      <p><strong>Timezone:</strong> { state.timezone }</p>
+    </div>
+
+    <!-- RIGHT COLUMN: INTERACTIVE MAP -->
+    <div class="column column-right state-map">
+      <h3>{ state.name } on the Map</h3>
+
+      <!-- Map container (Leaflet / SVG / JS driven) -->
+      <div 
+        id="state-map"
+        class="interactive-map"
+        data-state-code="{ state.code }"
+        data-lat="{ state.coordinates.lat }"
+        data-lng="{ state.coordinates.lng }"
+        data-zoom="{ state.map_zoom }"
+      >
+        <!-- JS will mount the map here -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- COST OF LIVING (FULL WIDTH, INTERACTIVE) -->
+<!-- ===================================================== -->
+<section class="cost-of-living">
+
+  <div class="container">
+
+    <h2>Cost of Living in { state.name }</h2>
+    <p class="section-intro">
+      Estimated monthly costs based on typical expenses in { state.capital }.
+      Adjust the values to see how your budget may change.
+    </p>
+
+    <!-- INTERACTIVE COST MODULE -->
+    <div 
+      class="cost-widget"
+      data-currency="{ state.currency }"
+    >
+
+      <!-- Housing -->
+      <div class="cost-row">
+        <label>Rent (1-bedroom)</label>
+        <input 
+          type="range" 
+          min="{ state.cost_of_living.rent.min }"
+          max="{ state.cost_of_living.rent.max }"
+          value="{ state.cost_of_living.rent.avg }"
+          data-cost="rent"
+        >
+        <span class="cost-value" data-output="rent"></span>
+      </div>
+
+      <!-- Food -->
+      <div class="cost-row">
+        <label>Food (monthly)</label>
+        <input 
+          type="range" 
+          min="{ state.cost_of_living.food.min }"
+          max="{ state.cost_of_living.food.max }"
+          value="{ state.cost_of_living.food.avg }"
+          data-cost="food"
+        >
+        <span class="cost-value" data-output="food"></span>
+      </div>
+
+      <!-- Transport -->
+      <div class="cost-row">
+        <label>Transportation</label>
+        <input 
+          type="range" 
+          min="{ state.cost_of_living.transport.min }"
+          max="{ state.cost_of_living.transport.max }"
+          value="{ state.cost_of_living.transport.avg }"
+          data-cost="transport"
+        >
+        <span class="cost-value" data-output="transport"></span>
+      </div>
+
+      <!-- TOTAL -->
+      <div class="cost-total">
+        <strong>Total Monthly Estimate:</strong>
+        <span id="cost-total-value"></span>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 <!-- ===================================================== -->
@@ -873,1108 +976,6 @@
     </form>
 </section>
 
-<!-- ===================================================== -->
-<!-- LOCAL SEO CONTEXT BLOCK -->
-<!-- State name + services + internal links -->
-<!-- ===================================================== -->
-<section class="local-seo">
-    <h2>Local SEO Context</h2>
-    <p>Explore immigration services in Tocantins, Brazil. From visas to residency, we help with your move to Palmas.</p>
-</section>
-
-<!-- ===================================================== -->
-<!-- STRUCTURED DATA / SCHEMA -->
-<!-- LocalBusiness, GovernmentService, ImageObject -->
-<!-- ===================================================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "name": "Immigrate to Tocantins, Brazil",
-  "description": "Immigration lawyer services assisting foreigners with visas, residency, and legal immigration to Tocantins, Brazil.",
-  "serviceType": [
-    "Immigration Law",
-    "Visa Applications",
-    "Residency Permits",
-    "Brazilian Immigration Services"
-  ],
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Tocantins"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "BR",
-    "addressRegion": "Tocantins"
-  },
-  "knowsLanguage": [
-    "English",
-    "Portuguese",
-    "Spanish"
-  ],
-  "knowsAbout": [
-    "Immigration Attorney",
-    "Immigration Lawyer",
-    "Brazilian Immigration Law",
-    "Brazilian Immigration Law",
-    "Visas",
-    "Residency Permits",
-    "Brazilian Citizenship",
-    "Brazilian Visas",
-    "Artistic Visa",
-    "Business Visa",
-    "Educational Exchange Visa",
-    "Digital Nomad Visa",
-    "Diplomatic Visa",
-    "Family Visa",
-    "Humanitarian Visa",
-    "Investor Visa",
-    "Journalist Visa",
-    "Medical Visa",
-    "Religious Visa",
-    "Research Visa",
-    "Retiree Visa",
-    "Sports Visa",
-    "Startup Visa",
-    "Student Visa",
-    "Tourist Visa",
-    "Transit Visa",
-    "Volunteer Visa",
-    "Work Visa",
-    "Brazilian Residency",
-    "CPLP Residency",
-    "Educational Exchange Residency",
-    "Digital Nomad Residency",
-    "Family Reunion Residency",
-    "Health Treatment Residency",
-    "Humanitarian Residency",
-    "Investor Residency",
-    "MERCOSUL Residency",
-    "Religious Residency",
-    "Retiree Residency",
-    "Scientific Research Residency",
-    "Skilled Worker Residency",
-    "Study Residency",
-    "Work Residency",
-    "Youth Exchange Residency",
-    "Volunteer Residency",
-    "Brazilian Naturalisation",
-    "Extraordinary Naturalisation",
-    "Ordinary Naturalisation",
-    "Provisional Naturalisation",
-    "Special Naturalisation",
-    "Renouncing Brazilian Citizenship",
-    "Reacquisition of Brazilian Citizenship",
-    "Immigration Appeals",
-    "Consular Services",
-    "Criminal Records Certificates",
-    "Deportation Defense",
-    "Extradition Proceedings",
-    "Expulsion Defense",
-    "Immigration Fines",
-    "Legal Translation Services",
-    "Artistic Visa",
-    "Business Visa",
-    "Educational Exchange Visa",
-    "Digital Nomad Visa",
-    "Diplomatic Visa",
-    "Family Visa",
-    "Humanitarian Visa",
-    "Investor Visa",
-    "Journalist Visa",
-    "Medical Visa",
-    "Religious Visa",
-    "Research Visa",
-    "Retiree Visa",
-    "Sports Visa",
-    "Startup Visa",
-    "Student Visa",
-    "Tourist Visa",
-    "Transit Visa",
-    "Volunteer Visa",
-    "Work Visa",
-    "Brazilian Residency",
-    "CPLP Residency",
-    "Educational Exchange Residency",
-    "Digital Nomad Residency",
-    "Family Reunion Residency",
-    "Health Treatment Residency",
-    "Humanitarian Residency",
-    "Investor Residency",
-    "MERCOSUL Residency",
-    "Religious Residency",
-    "Retiree Residency",
-    "Scientific Research Residency",
-    "Skilled Worker Residency",
-    "Study Residency",
-    "Work Residency",
-    "Youth Exchange Residency",
-    "Volunteer Residency",
-    "Brazilian Naturalisation",
-    "Ordinary Naturalisation",
-    "Extraordinary Naturalisation",
-    "Provisional Naturalisation",
-    "Special Naturalisation",
-    "Renouncing Brazilian Citizenship",
-    "Reacquisition of Brazilian Citizenship",
-    "Immigration Appeals",
-    "Consular Services",
-    "Criminal Records Certificates",
-    "Deportation Defense",
-    "Extradition Proceedings",
-    "Expulsion Defense",
-    "Immigration Fines",
-    "Legal Translation Services"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Brazil Immigration Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Artistic Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Business Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Educational Exchange Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Digital Nomad Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Diplomatic Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Family Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Humanitarian Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Investor Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Journalist Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medical Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Religious Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Research Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Retiree Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Sports Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Startup Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Student Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Tourist Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Transit Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Volunteer Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Work Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Brazilian Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "CPLP Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Educational Exchange Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Digital Nomad Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Family Reunion Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Health Treatment Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Humanitarian Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Investor Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "MERCOSUL Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Religious Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Retiree Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Scientific Research Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Skilled Worker Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Study Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Work Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Youth Exchange Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Volunteer Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Brazilian Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Ordinary Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Extraordinary Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Provisional Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Special Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Renouncing Brazilian Citizenship"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reacquisition of Brazilian Citizenship"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Immigration Appeals"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Consular Services"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Criminal Records Certificates"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Deportation Defense"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Extradition Proceedings"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Expulsion Defense"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Immigration Fines"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Legal Translation Services"
-        }
-      }
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can foreigners live in Tocantins?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Brazil offers multiple visa and residency options depending on eligibility."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a lawyer for Brazilian immigration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "While not mandatory, an immigration lawyer helps ensure legal compliance and faster processing."
-      }
-    }
-  ]
-}
-</script>
-<!-- Add LocalBusiness schema etc. -->
-
-<!-- ===================================================== -->
-<!-- INTERNAL LINKING & RELATED STATES -->
-<!-- Links to neighboring states and services -->
-<!-- ===================================================== -->
-<section class="internal-linking">
-    <h2>Internal Linking & Related States</h2>
-    <p>Explore related states in North Region, Brazil (straddles Amazon rainforest and coastal savanna, bordered by Maranhão, Piauí, Bahia, Goiás, Mato Grosso, Pará) or immigration services.</p>
-    <!-- Dynamically add links -->
-</section>
-
-
-<!-- ===================================================== -->
-<!-- STRUCTURED DATA / SCHEMA -->
-<!-- LocalBusiness, GovernmentService, ImageObject -->
-<!-- ===================================================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "name": "Immigrate to Tocantins, Brazil",
-  "description": "Immigration lawyer services assisting foreigners with visas, residency, and legal immigration to Tocantins, Brazil.",
-  "serviceType": [
-    "Immigration Law",
-    "Visa Applications",
-    "Residency Permits",
-    "Brazilian Immigration Services"
-  ],
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Tocantins"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "BR",
-    "addressRegion": "Tocantins"
-  },
-  "knowsLanguage": [
-    "English",
-    "Portuguese",
-    "Spanish"
-  ],
-  "knowsAbout": [
-    "Immigration Attorney",
-    "Immigration Lawyer",
-    "Brazilian Immigration Law",
-    "Brazilian Immigration Law",
-    "Visas",
-    "Residency Permits",
-    "Brazilian Citizenship",
-    "Brazilian Visas",
-    "Artistic Visa",
-    "Business Visa",
-    "Educational Exchange Visa",
-    "Digital Nomad Visa",
-    "Diplomatic Visa",
-    "Family Visa",
-    "Humanitarian Visa",
-    "Investor Visa",
-    "Journalist Visa",
-    "Medical Visa",
-    "Religious Visa",
-    "Research Visa",
-    "Retiree Visa",
-    "Sports Visa",
-    "Startup Visa",
-    "Student Visa",
-    "Tourist Visa",
-    "Transit Visa",
-    "Volunteer Visa",
-    "Work Visa",
-    "Brazilian Residency",
-    "CPLP Residency",
-    "Educational Exchange Residency",
-    "Digital Nomad Residency",
-    "Family Reunion Residency",
-    "Health Treatment Residency",
-    "Humanitarian Residency",
-    "Investor Residency",
-    "MERCOSUL Residency",
-    "Religious Residency",
-    "Retiree Residency",
-    "Scientific Research Residency",
-    "Skilled Worker Residency",
-    "Study Residency",
-    "Work Residency",
-    "Youth Exchange Residency",
-    "Volunteer Residency",
-    "Brazilian Naturalisation",
-    "Extraordinary Naturalisation",
-    "Ordinary Naturalisation",
-    "Provisional Naturalisation",
-    "Special Naturalisation",
-    "Renouncing Brazilian Citizenship",
-    "Reacquisition of Brazilian Citizenship",
-    "Immigration Appeals",
-    "Consular Services",
-    "Criminal Records Certificates",
-    "Deportation Defense",
-    "Extradition Proceedings",
-    "Expulsion Defense",
-    "Immigration Fines",
-    "Legal Translation Services",
-    "Artistic Visa",
-    "Business Visa",
-    "Educational Exchange Visa",
-    "Digital Nomad Visa",
-    "Diplomatic Visa",
-    "Family Visa",
-    "Humanitarian Visa",
-    "Investor Visa",
-    "Journalist Visa",
-    "Medical Visa",
-    "Religious Visa",
-    "Research Visa",
-    "Retiree Visa",
-    "Sports Visa",
-    "Startup Visa",
-    "Student Visa",
-    "Tourist Visa",
-    "Transit Visa",
-    "Volunteer Visa",
-    "Work Visa",
-    "Brazilian Residency",
-    "CPLP Residency",
-    "Educational Exchange Residency",
-    "Digital Nomad Residency",
-    "Family Reunion Residency",
-    "Health Treatment Residency",
-    "Humanitarian Residency",
-    "Investor Residency",
-    "MERCOSUL Residency",
-    "Religious Residency",
-    "Retiree Residency",
-    "Scientific Research Residency",
-    "Skilled Worker Residency",
-    "Study Residency",
-    "Work Residency",
-    "Youth Exchange Residency",
-    "Volunteer Residency",
-    "Brazilian Naturalisation",
-    "Ordinary Naturalisation",
-    "Extraordinary Naturalisation",
-    "Provisional Naturalisation",
-    "Special Naturalisation",
-    "Renouncing Brazilian Citizenship",
-    "Reacquisition of Brazilian Citizenship",
-    "Immigration Appeals",
-    "Consular Services",
-    "Criminal Records Certificates",
-    "Deportation Defense",
-    "Extradition Proceedings",
-    "Expulsion Defense",
-    "Immigration Fines",
-    "Legal Translation Services"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Brazil Immigration Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Artistic Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Business Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Educational Exchange Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Digital Nomad Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Diplomatic Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Family Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Humanitarian Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Investor Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Journalist Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Medical Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Religious Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Research Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Retiree Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Sports Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Startup Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Student Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Tourist Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Transit Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Volunteer Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Work Visa"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Brazilian Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "CPLP Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Educational Exchange Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Digital Nomad Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Family Reunion Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Health Treatment Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Humanitarian Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Investor Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "MERCOSUL Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Religious Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Retiree Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Scientific Research Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Skilled Worker Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Study Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Work Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Youth Exchange Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Volunteer Residency"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Brazilian Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Ordinary Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Extraordinary Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Provisional Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Special Naturalisation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Renouncing Brazilian Citizenship"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reacquisition of Brazilian Citizenship"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Immigration Appeals"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Consular Services"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Criminal Records Certificates"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Deportation Defense"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Extradition Proceedings"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Expulsion Defense"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Immigration Fines"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Legal Translation Services"
-        }
-      }
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can foreigners live in Tocantins?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Brazil offers multiple visa and residency options depending on eligibility."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a lawyer for Brazilian immigration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "While not mandatory, an immigration lawyer helps ensure legal compliance and faster processing."
-      }
-    }
-  ]
-}
-</script>
 
 
 <!-- ======================================================
@@ -2050,16 +1051,7 @@
     </ul>
 </section>
 
-<!-- ======================================================
-     WHY THIS STATE
-====================================================== -->
-<section class="why-state">
-    <h2>Why Tocantins?</h2>
-    <p>
-        Ideal for waterfall chasers seeking a
-        watery and savanna lifestyle, especially around Palmas.
-    </p>
-</section>
+
 <!-- ======================================================
      PROCESS
 ====================================================== -->
