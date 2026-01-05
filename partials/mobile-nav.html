@@ -1,0 +1,15 @@
+<nav class="mobile-nav" aria-label="Mobile navigation">
+    <button aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    <ul id="mobile-menu" hidden>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/services/artistic-visa">Artistic Visa</a></li>
+        <li><a href="/to">Explore Tocantins</a></li>
+    </ul>
+    <script>
+    document.querySelector('.mobile-nav button').addEventListener('click', function() {
+        this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+        document.getElementById('mobile-menu').hidden = !document.getElementById('mobile-menu').hidden;
+    });
+    </script>
+</nav>

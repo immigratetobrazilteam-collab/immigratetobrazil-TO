@@ -559,7 +559,11 @@
   ]
 }
 </script>
-
+</head>
+<body>
+    <div id="header-placeholder"></div>  <!-- Where header will load -->
+    
+    <main>
 <!-- ===================================================== -->
 <!-- PAGE IDENTITY -->
 <!-- State code, state name, capital city, region, timezone -->
@@ -927,6 +931,17 @@
      SERVICES
 ====================================================== -->
 <section class="services">
+     <h2>Travel Services</h2>
+
+    <h3>Guided Travel Services</h3>
+    <ul>
+        <li><a href="north.html">North</a></li>
+        <li><a href="north-east.html">Northeast,</a></li>
+        <li><a href="central-west.html">Central-West</a></li>
+        <li><a href="south-east.html">Southeast</a></li>
+        <li><a href="south.html">South</a></li>
+    </ul>
+
     <h2>Immigration & Legal Services in Brazil</h2>
 
     <h3>Brazilian Visas</h3>
@@ -992,7 +1007,7 @@
         <li><a href="extradition-proceedings.html">Extradition Proceedings</a></li>
         <li><a href="expulsion-defense.html">Expulsion Defense</a></li>
         <li><a href="immigration-fines-compliance.html">Immigration Fines & Compliance</a></li>
-        <li><a href="certified-legal-translation.html">Certified Legal Translation</a></li>
+        <li><a href="translation.html">Certified Legal Translation</a></li>
     </ul>
 </section>
 
@@ -1082,6 +1097,26 @@
         <button type="submit">Send</button>
     </form>
 </section>
-<script src="main.js"></script>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+<div id="footer-placeholder"></div>  <!-- Where footer will load -->
+    
+    <script>
+        // Function to load a partial
+        function loadPartial(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading partial:', error));
+        }
+
+        // Load header and footer
+        loadPartial('partials/header.html', 'header-placeholder');
+        loadPartial('partials/footer.html', 'footer-placeholder');
+    </script>
 </body>
 </html>

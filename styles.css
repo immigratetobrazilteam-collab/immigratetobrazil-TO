@@ -4,13 +4,30 @@ body {
     background: #E0FFFF;
     color: #006400;
 }
-h1, h2 {
+
+h1, h2, h3 {
     font-family: Waterfall;
     color: #00CED1;
 }
+
 a {
     color: #228B22;
+    text-decoration: none;
 }
+
 section {
     padding: 3rem;
+}
+
+button {
+    background: #00CED1;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
 }
