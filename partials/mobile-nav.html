@@ -1,15 +1,52 @@
-<nav class="mobile-nav" aria-label="Mobile navigation">
-    <button aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-    <ul id="mobile-menu" hidden>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/services/artistic-visa">Artistic Visa</a></li>
-        <li><a href="/to">Explore Tocantins</a></li>
+<nav class="mobile-nav md:hidden" aria-label="Mobile navigation">
+    <button aria-expanded="false" aria-controls="mobile-menu" class="w-full px-4 py-2 bg-[#00CED1] text-white rounded flex justify-between items-center">Menu <i class="fas fa-chevron-down"></i></button>
+    <ul id="mobile-menu" class="hidden flex flex-col bg-white shadow-md rounded-md mt-1 overflow-auto max-h-[80vh]">
+        <li><a href="/" class="block px-4 py-2 hover:bg-[#228B22]/10">Home</a></li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#228B22]/10 flex justify-between items-center" aria-expanded="false" aria-controls="services-sub">Services <i class="fas fa-chevron-down"></i></button>
+            <ul id="services-sub" class="hidden pl-4">
+                <li class="font-bold py-1">Travel Services</li>
+                
+                <li class="font-bold py-1 mt-2">Brazilian Visas</li>
+                <li><a href="/visas/artistic-visa" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Artistic Visa">Artistic Visa</a></li>
+                <li class="font-bold py-1 mt-2">Residency Permits</li>
+                
+                <li class="font-bold py-1 mt-2">Citizenship & Naturalisation</li>
+                
+                <li class="font-bold py-1 mt-2">Other Services</li>
+                
+            </ul>
+        </li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#228B22]/10 flex justify-between items-center" aria-expanded="false" aria-controls="explore-sub">Explore Tocantins <i class="fas fa-chevron-down"></i></button>
+            <ul id="explore-sub" class="hidden pl-4">
+                <li><a href="/explore/bananal-island" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Bananal Island">Bananal Island</a></li><li><a href="/explore/araguaia-national-park" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Araguaia National Park">Araguaia National Park</a></li><li><a href="/explore/jalapão-state-park" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Jalapão State Park">Jalapão State Park</a></li><li><a href="/explore/tocantins-river" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Tocantins River">Tocantins River</a></li><li><a href="/explore/araguaia-river" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Araguaia River">Araguaia River</a></li><li><a href="/explore/cerrado-vegetation-(savanna-formations,-gallery-forests,-stream-valleys)" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="cerrado vegetation (savanna formations, gallery forests, stream valleys)">cerrado vegetation (savanna formations, gallery forests, stream valleys)</a></li><li><a href="/explore/amazon-biome-transition-zone" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Amazon biome transition zone">Amazon biome transition zone</a></li><li><a href="/explore/bananal-island-(second-largest-fluvial-island)" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Bananal Island (second largest fluvial island)">Bananal Island (second largest fluvial island)</a></li><li><a href="/explore/cantão-(inland-delta-with-igapó-flooded-forest)" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Cantão (inland delta with igapó flooded forest)">Cantão (inland delta with igapó flooded forest)</a></li><li><a href="/explore/araguaia-national-park" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Araguaia National Park">Araguaia National Park</a></li><li><a href="/explore/jalapão-state-park" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="Jalapão State Park">Jalapão State Park</a></li><li><a href="/explore/soybean" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="soybean">soybean</a></li><li><a href="/explore/beef" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="beef">beef</a></li><li><a href="/explore/pineapple" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="pineapple">pineapple</a></li><li><a href="/explore/maize" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="maize">maize</a></li><li><a href="/explore/rice" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="rice">rice</a></li><li><a href="/explore/babaçu-palm-products-(charcoal-and-oils)" class="block py-2 pl-4 hover:bg-[#228B22]/10" title="babaçu palm products (charcoal and oils)">babaçu palm products (charcoal and oils)</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact" class="block px-4 py-2 hover:bg-[#228B22]/10">Contact</a></li>
+        <li><a href="/faq" class="block px-4 py-2 hover:bg-[#228B22]/10">FAQ</a></li>
+        <li><a href="/blog" class="block px-4 py-2 hover:bg-[#228B22]/10">Blog</a></li>
+        <li><a href="/about" class="block px-4 py-2 hover:bg-[#228B22]/10">About</a></li>
     </ul>
     <script>
-    document.querySelector('.mobile-nav button').addEventListener('click', function() {
-        this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-        document.getElementById('mobile-menu').hidden = !document.getElementById('mobile-menu').hidden;
-    });
+        const menuBtn = document.querySelector('.mobile-nav button');
+        const menu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('hidden');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-down');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+        document.querySelectorAll('.mobile-nav li button').forEach(subBtn => {
+            subBtn.addEventListener('click', () => {
+                const expanded = subBtn.getAttribute('aria-expanded') === 'true';
+                subBtn.setAttribute('aria-expanded', !expanded);
+                const subMenu = document.getElementById(subBtn.getAttribute('aria-controls'));
+                subMenu.classList.toggle('hidden');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-down');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-up');
+            });
+        });
     </script>
 </nav>

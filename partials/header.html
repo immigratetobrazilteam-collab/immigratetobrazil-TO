@@ -1,6 +1,23 @@
-<header>
-    <h1>Tocantins Immigration - The Tocantins River, waterfalls, and the cerrado savanna. Known for the Jalapão region with its dunes and natural pools.</h1>
-    <nav aria-label="Main navigation">
-        <!-- Include nav.html -->
-    </nav>
+<header id="main-header" class="bg-[#00CED1] text-[#006400] py-4 shadow-md" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+    <div class="container mx-auto px-4 flex flex-wrap items-center justify-between gap-4">
+        <div class="site-branding flex items-center gap-4">
+            <img src="assets/to-logo.png" alt="Tocantins Logo" width="120" height="40" loading="lazy" class="max-h-10">
+            <div>
+                <h1 class="text-2xl font-[Waterfall] mb-1" itemprop="name">Tocantins Immigration</h1>
+            </div>
+        </div>
+        <form class="search-form flex gap-2" role="search" method="get" action="/search" aria-label="Site search">
+            <input type="search" name="q" placeholder="Search visas, costs..." class="px-3 py-1 border rounded" required>
+            <button type="submit" class="bg-[#228B22] text-white px-3 py-1 rounded" aria-label="Search">🔍</button>
+        </form>
+        <div class="language-switcher" role="region" aria-label="Language selection">
+    <button data-lang="en">English</button>
+    <button data-lang="pt">Português</button>
+    <button data-lang="es">Español</button>
+</div>
+        <nav aria-label="Main navigation" class="hidden md:block">
+            <!-- Include generate_nav_html(state, services_data) -->
+        </nav>
+        <!-- Include generate_mobile_nav_html(state, services_data) for mobile -->
+    </div>
 </header>
