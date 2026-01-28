@@ -1,0 +1,113 @@
+{
+    "persona": {
+        "label": "Savannah Transitioner",
+        "tone": "Balanced, transitional, adaptive",
+        "visual_intensity": "low",
+        "risk_tolerance": "conservative"
+    },
+    "tokens": {
+        "colors": {
+            "primary": "#4a5568",
+            "secondary": "#2d3748",
+            "accent": "#718096",
+            "bg": "#f7fafc",
+            "text": "#1a202c",
+            "hover": "#1a202c",
+            "active": "#171923",
+            "focus": "#4a5568",
+            "success": "#38a169",
+            "error": "#e53e3e",
+            "warning": "#d69e2e",
+            "info": "#3182ce",
+            "neutral": "#e2e8f0",
+            "link": "#2b6cb0",
+            "border": "#a0aec0",
+            "surface": "#edf2f7",
+            "gradient_bg": "linear-gradient(to top, #f7fafc, #edf2f7)"
+        },
+        "typography": {
+            "primary_font": "'Poppins', system-ui, sans-serif",
+            "base_size": "16px",
+            "line_height": "1.5",
+            "heading_sizes": [
+                "2.5rem",
+                "2.1rem",
+                "1.8rem",
+                "1.5rem",
+                "1.3rem",
+                "1.1rem"
+            ]
+        },
+        "spacing": {
+            "xs": "4px",
+            "s": "8px",
+            "m": "16px",
+            "l": "24px",
+            "xl": "40px",
+            "xxl": "56px"
+        },
+        "borders": {
+            "radius": "4px"
+        },
+        "shadows": {
+            "low": "0 2px 4px rgba(74,85,104,0.05)",
+            "medium": "0 6px 12px rgba(74,85,104,0.1)"
+        },
+        "motion": {
+            "timing": "0.3s ease-in-out"
+        },
+        "breakpoints": {
+            "tablet": "768px",
+            "desktop": "1024px"
+        },
+        "animations": {
+            "duration_base": 0.3,
+            "ease_default": "easeInOutSine",
+            "intensity_mod": 0.8,
+            "risk_ease": "ease-in-out",
+            "mobile_mod": 0.6
+        }
+    },
+    "animation_customizations": {
+        "hero": {
+            "from": {
+                "opacity": 0,
+                "y": 50
+            },
+            "to": {
+                "opacity": 1,
+                "y": 0
+            }
+        },
+        "cta": {
+            "hover": {
+                "scale": 1.05
+            },
+            "leave": {
+                "scale": 1
+            }
+        },
+        "form": {
+            "stagger": 0.1,
+            "from": {
+                "opacity": 0
+            }
+        },
+        "list": {
+            "stagger": 0.2,
+            "from": {
+                "opacity": 0,
+                "x": -50
+            }
+        },
+        "content": {
+            "from": {
+                "opacity": 0
+            },
+            "to": {
+                "opacity": 1
+            }
+        },
+        "mobile_mod": 0.8
+    }
+}
