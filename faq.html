@@ -3,85 +3,420 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Tocantins | Immigrate to Brazil</title>
+    <meta name="description" content="Frequently asked questions about immigration to Tocantins, Brazil. Learn about visa types, requirements, costs, and processes.">
+    <title>Immigration FAQ - Tocantins | Immigrate to Brazil</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
         .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-        h1 { color: #006666; font-size: 2.5rem; margin: 40px 0; text-align: center; }
-        .faq-container { margin: 50px 0; }
-        .faq-item { background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .faq-question { padding: 20px; background: linear-gradient(135deg, #006666 0%, #40E0D0 100%); color: white; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; transition: 0.3s; }
-        .faq-question:hover { background: #40E0D0; }
-        .faq-answer { padding: 20px; display: none; background: white; color: #333; }
-        .faq-item.active .faq-answer { display: block; }
-        .toggle { font-size: 1.5rem; }
-        #scroll-to-top { position: fixed; bottom: 30px; right: 30px; background: #006666; color: white; width: 50px; height: 50px; border: none; border-radius: 50%; opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 99; cursor: pointer; font-weight: bold; }
+        
+        h1 { color: #333; font-size: 2.5rem; margin: 40px 0 20px 0; text-align: center; }
+        h2 { color: #667eea; font-size: 1.8rem; margin: 40px 0 30px 0; }
+        
+        .faq-intro { background: white; padding: 30px; margin: 30px 0; border-radius: 10px; text-align: center; }
+        
+        .faq-item { background: white; padding: 25px; margin: 15px 0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); border-left: 4px solid #667eea; }
+        .faq-item.open { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+        
+        .faq-question { font-weight: bold; font-size: 1.1rem; color: #333; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+        .faq-question:hover { color: #667eea; }
+        .faq-toggle { font-size: 1.5rem; color: #667eea; }
+        
+        .faq-answer { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; }
+        .faq-answer.show { display: block; }
+        
+        .faq-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 30px 0; }
+        .category-tag { background: #667eea; color: white; padding: 10px 15px; border-radius: 5px; text-align: center; font-size: 0.9rem; }
+        
+        #scroll-to-top { position: fixed; bottom: 30px; right: 30px; background: #667eea; color: white; width: 50px; height: 50px; border: none; border-radius: 50%; cursor: pointer; font-weight: bold; display: none; }
+        #scroll-to-top.show { display: block; }
     </style>
 </head>
 <body>
     <div data-partial="header"></div>
+    
     <div class="container">
-        <h1>🌊 Frequently Asked Questions - Tocantins</h1>
-        <div class="faq-container">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>What visa types are available for Tocantins?</span>
-                    <span class="toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>We specialize in Work Visas (VITEM), Residency Permits, Family Reunification, Student Visas, Business Visas, and more. Each category has specific requirements.</p>
-                </div>
+        <h1>Frequently Asked Questions</h1>
+        <h2>Immigration to Tocantins, Brazil</h2>
+        
+        <div class="faq-intro">
+            <p>Find answers to common questions about visa types, requirements, costs, and the immigration process to Tocantins.</p>
+        </div>
+        
+        <!-- General Questions -->
+        <h2 style="margin-top: 50px; border-bottom: 2px solid #667eea; padding-bottom: 15px;">General Immigration Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What are the main visa categories available?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Brazil offers multiple visa categories including:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Work Visas (VITEM):</strong> For professionals and technical workers</li>
+                    <li><strong>Residency Permits:</strong> Permanent and temporary residence options</li>
+                    <li><strong>Family Visas:</strong> For spouses, dependents, and relatives</li>
+                    <li><strong>Student Visas (VITEM IV):</strong> For academic study</li>
+                    <li><strong>Artist Visas (VIART):</strong> For cultural and artistic professionals</li>
+                    <li><strong>Business Visa (VITEM II):</strong> For business meetings and conferences</li>
+                    <li><strong>Investor Visas:</strong> For real estate and business investment</li>
+                </ul>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>How long does the visa process take?</span>
-                    <span class="toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Processing times vary between 30 to 180 days depending on visa type and government workload. We'll provide realistic timelines.</p>
-                </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What is the processing time for a visa application?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Processing times vary by visa type and complexity:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Work Visas: 30-60 days</li>
+                    <li>Residency Permits: 45-90 days</li>
+                    <li>Family Visas: 30-45 days</li>
+                    <li>Student Visas: 15-30 days</li>
+                    <li>Artist Visas: 30-45 days</li>
+                </ul>
+                <p style="margin-top: 10px;">Complex cases may take longer. We'll provide an estimated timeline after reviewing your application.</p>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>What documents do I need?</span>
-                    <span class="toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Required documents vary by visa type but typically include passport, birth certificate, police clearance, financial documents, medical exam, and application form.</p>
-                </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What documents do I need to prepare?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Required documents vary by visa type, but generally include:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Valid passport (minimum 6 months validity)</li>
+                    <li>Completed visa application form</li>
+                    <li>Proof of financial means</li>
+                    <li>Background/police clearance certificate</li>
+                    <li>Photographs (specific format required)</li>
+                    <li>Proof of accommodation in Brazil</li>
+                    <li>Health certificate (for some visa types)</li>
+                    <li>Job offer or sponsorship letter (for work visas)</li>
+                </ul>
+                <p style="margin-top: 10px;">We provide a complete checklist tailored to your visa type during consultation.</p>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Can I work on a tourist visa?</span>
-                    <span class="toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>No, working on a tourist visa is illegal. You need the appropriate work visa (VITEM) with employer sponsorship.</p>
-                </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>How much does the visa application cost?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Visa fees vary by type and nationality:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Work Visas: USD 100-300</li>
+                    <li>Residency Permits: Varies</li>
+                    <li>Family Visas: USD 100-200</li>
+                    <li>Student Visas: Free to USD 100</li>
+                    <li>Artist Visas: USD 100-200</li>
+                </ul>
+                <p style="margin-top: 10px;">These are consular fees only. Professional services may add to the total cost. Get a detailed quote after your consultation.</p>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>What are your fees?</span>
-                    <span class="toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Fees vary based on case complexity. Contact us for a free consultation and detailed quote. Payment plans available.</p>
-                </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I work in Brazil on a tourist visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>No, working on a tourist visa is illegal in Brazil. You must obtain the appropriate work visa (VITEM) before accepting employment. Violations can result in fines, deportation, and legal penalties. If you wish to work, we can help you apply for the correct visa category.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>How do I apply for permanent residency?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Permanent residency in Brazil can be obtained through several paths:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Marriage to a Brazilian citizen</li>
+                    <li>Family relationships (parents, children)</li>
+                    <li>Retirement with sufficient funds</li>
+                    <li>Real estate investment</li>
+                    <li>Temporary residency conversion (typically after 4 years)</li>
+                </ul>
+                <p style="margin-top: 10px;">Each path has specific requirements. Contact us for details on your eligibility.</p>
+            </div>
+        </div>
+        
+        <!-- Work Visa Questions -->
+        <h2 style="margin-top: 50px; border-bottom: 2px solid #667eea; padding-bottom: 15px;">Work Visa Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What qualifications do I need for a work visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Work visa requirements depend on the specific VITEM category:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>VITEM I: Isolated activities (freelancers, consultants)</li>
+                    <li>VITEM II: Business activities</li>
+                    <li>VITEM III: Technical services and specialized skills</li>
+                </ul>
+                <p style="margin-top: 10px;">Generally, you'll need a job offer, professional qualifications, and proof that your skills are needed in Brazil. We'll evaluate your profile.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Do I need a job offer before applying for a work visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes, a job offer or sponsorship letter from a Brazilian employer is typically required for work visas. The employer must submit a labor application confirming that foreign workers are needed for the position. We can guide you and your employer through this process.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I bring my family on a work visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes! You can bring your spouse and dependent children on family visas. They can be included in your application or apply separately. Family members will need to provide their own documentation but won't need separate employment.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What is the salary requirement for a work visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>There is no fixed minimum salary requirement for work visas. However, your salary should be competitive and appropriate for your position and experience. The employer must justify why a foreign worker is necessary for the role.</p>
+            </div>
+        </div>
+        
+        <!-- Family & Residency Questions -->
+        <h2 style="margin-top: 50px; border-bottom: 2px solid #667eea; padding-bottom: 15px;">Family & Residency Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I bring my spouse to Brazil?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes! Spouses and stable partners can obtain visas through family reunification. You'll need:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Marriage certificate or proof of stable partnership</li>
+                    <li>Proof of financial support</li>
+                    <li>Valid passport</li>
+                    <li>Police clearance</li>
+                </ul>
+                <p style="margin-top: 10px;">Same-sex marriages are recognized in Brazil, and spouses have equal rights.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I bring my children?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes! Dependent children can be included in your visa application. You'll need:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Birth certificates</li>
+                    <li>Proof of custody if applicable</li>
+                    <li>Parental consent if only one parent is immigrating</li>
+                </ul>
+                <p style="margin-top: 10px;">Children will receive the same visa as you and can attend Brazilian schools.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I retire in Brazil?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes! Brazil offers residency for retirees with sufficient income. You'll typically need:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Proof of monthly income (USD 2,000-3,000 depending on program)</li>
+                    <li>Valid passport</li>
+                    <li>Police clearance</li>
+                    <li>Health certificate</li>
+                </ul>
+                <p style="margin-top: 10px;">Retirees can enjoy a comfortable lifestyle in Tocantins with relatively low living costs.</p>
+            </div>
+        </div>
+        
+        <!-- Student Visa Questions -->
+        <h2 style="margin-top: 50px; border-bottom: 2px solid #667eea; padding-bottom: 15px;">Student Visa Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What are the requirements for a student visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Student visa (VITEM IV) requirements include:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Acceptance letter from a recognized Brazilian educational institution</li>
+                    <li>Proof of financial means to support your studies</li>
+                    <li>Valid passport</li>
+                    <li>Police clearance</li>
+                    <li>Academic records/transcripts</li>
+                    <li>Health certificate</li>
+                </ul>
+                <p style="margin-top: 10px;">We can assist with university applications and visa processing.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I work while studying?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>International students can work in certain circumstances, typically:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>On-campus work at the university</li>
+                    <li>Internships related to your study program</li>
+                    <li>Part-time work with employer sponsorship</li>
+                </ul>
+                <p style="margin-top: 10px;">Work must not interfere with your studies. Contact your university's international office for specific guidelines.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I convert my student visa to a work visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes! After graduation, you can transition to a work visa if you find employment. We provide support for this transition, helping you and your employer navigate the process.</p>
+            </div>
+        </div>
+        
+        <!-- Living in Brazil Questions -->
+        <h2 style="margin-top: 50px; border-bottom: 2px solid #667eea; padding-bottom: 15px;">Living in Tocantins</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What is the cost of living in Tocantins?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Cost of living in Tocantins is moderate (generally affordable).</p>
+                <p style="margin-top: 10px;">Monthly expenses for a comfortable lifestyle typically include:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Rent: USD 500-1,500 depending on location</li>
+                    <li>Food and groceries: USD 300-500</li>
+                    <li>Utilities: USD 100-200</li>
+                    <li>Transportation: USD 50-100</li>
+                    <li>Entertainment: USD 100-300</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What is the healthcare system like?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Brazil has a comprehensive healthcare system with public (SUS) and private options:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Public Healthcare (SUS):</strong> Free for residents and citizens</li>
+                    <li><strong>Private Insurance:</strong> Affordable plans available</li>
+                    <li><strong>Quality:</strong> Modern facilities in major cities like Palmas</li>
+                </ul>
+                <p style="margin-top: 10px;">International health insurance is recommended for comprehensive coverage.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What is the education system like for children?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Brazil offers various educational options:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Public Schools:</strong> Free for all residents</li>
+                    <li><strong>Private Schools:</strong> International and Brazilian options available</li>
+                    <li><strong>Language:</strong> Portuguese is the medium of instruction; English options available</li>
+                </ul>
+                <p style="margin-top: 10px;">Tocantins has excellent schools. We can provide recommendations and enrollment assistance.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>How do I open a bank account?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Opening a bank account in Brazil is relatively easy:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Visit a Brazilian bank with your visa and identification</li>
+                    <li>CPF (tax ID) helps but isn't always required for initial setup</li>
+                    <li>Most banks offer accounts for foreigners</li>
+                    <li>Online banking is available</li>
+                </ul>
+                <p style="margin-top: 10px;">We can provide guidance and bank recommendations in Tocantins.</p>
+            </div>
+        </div>
+        
+        <!-- Legal & Practical Questions -->
+        <h2 style="margin-top: 50px; border-bottom: 2px solid #667eea; padding-bottom: 15px;">Legal & Practical Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Do I need a police clearance?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes, a police clearance (criminal background check) is required for most visa types. The certificate must be:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Issued within the last 3 months</li>
+                    <li>Official government document</li>
+                    <li>Translated into Portuguese by a certified translator</li>
+                </ul>
+                <p style="margin-top: 10px;">We can guide you on how to obtain this in your home country.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>What if my visa application is denied?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>If your application is denied, you have options:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Request detailed reasons for the denial</li>
+                    <li>File an administrative appeal (for some cases)</li>
+                    <li>Reapply with corrected or additional documentation</li>
+                    <li>Seek legal representation for complex cases</li>
+                </ul>
+                <p style="margin-top: 10px;">We specialize in appeals and can help you understand your options.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Do I need to speak Portuguese?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>While not strictly required for visa applications, Portuguese is essential for living in Brazil:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Business and work: Portuguese proficiency expected</li>
+                    <li>Daily life: Helpful for shopping, healthcare, banking</li>
+                    <li>Education: Child education typically in Portuguese</li>
+                </ul>
+                <p style="margin-top: 10px;">Many language schools operate in Tocantins. We recommend starting Portuguese lessons before or after arrival.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>How do I get a CPF (Tax ID)?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>The CPF is essential for many activities in Brazil:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Request at the Federal Revenue Service (Receita Federal)</li>
+                    <li>Online registration is available</li>
+                    <li>You'll receive a certificate by mail</li>
+                    <li>Needed for bank accounts, employment, and formal contracts</li>
+                </ul>
+                <p style="margin-top: 10px;">We can guide you through this process after you arrive in Brazil.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>Can I extend my visa?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Yes, most visas can be extended, depending on the visa type and circumstances. Extension procedures typically include:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Application to Federal Police</li>
+                    <li>Required documentation (varies by visa type)</li>
+                    <li>Processing time: typically 30-60 days</li>
+                </ul>
+                <p style="margin-top: 10px;">Contact us before your visa expires to start the extension process.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question"><span>How can your team help me?</span><span class="faq-toggle">+</span></div>
+            <div class="faq-answer">
+                <p>Our immigration experts provide comprehensive services:</p>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Visa eligibility assessment</li>
+                    <li>Document preparation and translation</li>
+                    <li>Application submission and tracking</li>
+                    <li>Consular interview preparation</li>
+                    <li>Problem resolution and appeals</li>
+                    <li>Post-arrival support and orientation</li>
+                </ul>
+                <p style="margin-top: 10px;">Schedule your free consultation to learn how we can assist you!</p>
             </div>
         </div>
     </div>
+    
     <div data-partial="footer"></div>
     <button id="scroll-to-top">↑</button>
     <script src="js/partials-loader.js"></script>
     <script>
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', () => {
-                const item = q.parentElement;
-                const toggle = q.querySelector('.toggle');
-                item.classList.toggle('active');
-                toggle.textContent = item.classList.contains('active') ? '−' : '+';
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                item.classList.toggle('open');
+                const answer = this.nextElementSibling;
+                answer.classList.toggle('show');
             });
+        });
+        
+        const scrollBtn = document.getElementById('scroll-to-top');
+        window.addEventListener('scroll', () => {
+            scrollBtn.classList.toggle('show', window.pageYOffset > 300);
+        });
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>

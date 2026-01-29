@@ -1,24 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About Immigration Services | Palmas</title><link rel="stylesheet" href="css/styles.css">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system, BlinkMacSystemFont,'Segoe UI',Roboto;line-height:1.6;color:#333;background:#f9f9f9}.container{max-width:1200px;margin:0 auto;padding:0 20px}section{margin:80px 0}h1{font-size:3rem;color:#008080;font-weight:800}h2{font-size:2.3rem;color:#008080;font-weight:700}h3{font-size:1.3rem;font-weight:700}.hero{background:linear-gradient(135deg,#008080 0%,#20b2aa 100%);color:white;padding:100px 20px;text-align:center;border-radius:12px}.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px}.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}.card{background:white;padding:30px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);border-top:4px solid #90ee90}.stat{text-align:center;padding:30px;background:linear-gradient(135deg,#008080 0%,#20b2aa 100%);color:white;border-radius:8px}.stat-num{font-size:2.5rem;font-weight:800}.btn{background:#008080;color:white;padding:15px 35px;border:none;border-radius:6px;font-weight:600;cursor:pointer;text-decoration:none}.cta{background:linear-gradient(135deg,#008080 0%,#20b2aa 100%);color:white;padding:80px 20px;text-align:center;border-radius:12px}#scroll-to-top{position:fixed;bottom:30px;right:30px;background:#008080;color:white;border:none;padding:12px 16px;border-radius:50px;opacity:0;visibility:hidden;transition:all 0.3s;z-index:99}</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive guide to Tocantins, Brazil. Everything about Palmas, lifestyle, economy, education, and immigration.">
+    <title>Complete Guide to Tocantins | Immigrate to Brazil</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: #333; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        h1 { color: #222; font-size: 2.8rem; margin: 40px 0 15px 0; border-bottom: 3px solid #667eea; padding-bottom: 15px; }
+        h2 { color: #667eea; font-size: 2rem; margin: 50px 0 25px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea20; }
+        h3 { color: #764ba2; font-size: 1.4rem; margin: 30px 0 15px 0; }
+        h4 { color: #667eea; font-size: 1.1rem; margin: 20px 0 10px 0; font-weight: 600; }
+        
+        p { margin: 15px 0; font-size: 1.05rem; }
+        
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; margin: 30px 0; border-radius: 15px; text-align: center; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3); }
+        .hero h1 { color: white; border: none; margin: 0 0 15px 0; }
+        .hero p { font-size: 1.3rem; }
+        
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
+        .stat-box { background: white; padding: 25px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #667eea; }
+        .stat-box .stat-value { font-size: 2.2rem; color: #667eea; font-weight: bold; margin: 10px 0; }
+        .stat-box .stat-label { color: #666; font-weight: 600; }
+        
+        .section { background: white; padding: 40px; margin: 30px 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .section ul { list-style: none; padding: 0; }
+        .section li { padding: 12px 0; padding-left: 30px; position: relative; line-height: 1.6; }
+        .section li:before { content: "▹"; position: absolute; left: 0; color: #667eea; font-weight: bold; font-size: 1.3rem; }
+        
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 30px 0; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 30px 0; }
+        
+        .highlight { background: linear-gradient(120deg, #667eea15 0%, #764ba215 100%); padding: 20px; border-left: 4px solid #667eea; border-radius: 5px; margin: 20px 0; }
+        .highlight strong { color: #667eea; }
+        
+        .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .comparison-item { background: #f0f4ff; padding: 15px; border-radius: 8px; }
+        .comparison-item strong { color: #667eea; }
+        
+        .cta-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px; margin: 50px 0; border-radius: 15px; text-align: center; }
+        .cta-section h2 { color: white; border: none; }
+        .cta-button { background: white; color: #667eea; padding: 15px 40px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; margin: 20px 10px; display: inline-block; transition: all 0.3s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        
+        .table-responsive { overflow-x: auto; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; }
+        table th { background: #667eea; color: white; padding: 15px; text-align: left; }
+        table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+        table tr:hover { background: #f8f9fa; }
+        
+        .timeline { position: relative; padding-left: 40px; margin: 30px 0; }
+        .timeline-item { position: relative; margin-bottom: 25px; }
+        .timeline-item:before { content: "●"; position: absolute; left: -45px; font-size: 1.5rem; color: #667eea; }
+        .timeline-item strong { color: #667eea; }
+        
+        .FAQ-toggle { cursor: pointer; background: #f0f4ff; padding: 15px; margin: 10px 0; border-radius: 8px; user-select: none; }
+        .FAQ-toggle:hover { background: #e8ebff; }
+        .faq-content { display: none; padding: 15px; background: white; border-left: 4px solid #667eea; }
+        .faq-content.active { display: block; }
+        
+        .expat-tips { background: linear-gradient(120deg, #fff5f7 0%, #ffe0e6 100%); padding: 25px; border-radius: 10px; margin: 20px 0; }
+        .expat-tips li { color: #d63384; padding-left: 30px; }
+        .expat-tips li:before { color: #d63384; }
+        
+        #scroll-to-top { position: fixed; bottom: 30px; right: 30px; background: #667eea; color: white; width: 50px; height: 50px; border: none; border-radius: 50%; cursor: pointer; font-size: 1.5rem; display: none; box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4); }
+        #scroll-to-top.show { display: block; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .hero { padding: 40px 20px; }
+            .section { padding: 20px; }
+        }
+    </style>
 </head>
-<body><div id="header-placeholder"></div><button id="scroll-to-top">↑ Top</button>
-<main id="main-content">
-<section class="hero"><div class="container"><h1>About Our Immigration Law Firm</h1><p style="font-size:1.2rem;opacity:0.95">Helping families and professionals achieve their Brazilian dreams for 15+ years</p></div></section>
-<section><div class="container"><h2>Mission & Vision</h2><div class="grid-2"><div class="card"><h3>🎯 Mission</h3><p>Provide world-class immigration legal services that empower clients to achieve their goals in Brazil.</p></div><div class="card"><h3>🚀 Vision</h3><p>Be the most trusted immigration law firm across all 27 Brazilian states.</p></div></div></div></section>
-<section style="background:linear-gradient(135deg,#008080 0%,#20b2aa 100%);color:white;padding:60px 20px;border-radius:12px"><div class="container"><h2 style="color:white;text-align:center">Our Achievements</h2><div class="grid-3" style="margin-top:40px"><div class="stat"><div class="stat-num">1000+</div><p>Successful Cases</p></div><div class="stat"><div class="stat-num">95%</div><p>Approval Rate</p></div><div class="stat"><div class="stat-num">15+</div><p>Years Experience</p></div><div class="stat"><div class="stat-num">27</div><p>States Covered</p></div><div class="stat"><div class="stat-num">60 Days</div><p>Avg Processing</p></div><div class="stat"><div class="stat-num">50+</div><p>Countries Served</p></div></div></div></section>
-<section><div class="container"><h2>Our Expertise</h2><div class="grid-3"><div class="card"><h3>💼 Business</h3><p>Work visas, investor visas & business permits</p></div><div class="card"><h3>👨‍👩‍👧 Family</h3><p>Spousal visas & family reunification</p></div><div class="card"><h3>🏛️ Citizenship</h3><p>Naturalization & citizenship documentation</p></div><div class="card"><h3>📋 Compliance</h3><p>Visa renewals & status maintenance</p></div><div class="card"><h3>⚖️ Appeals</h3><p>Visa denials & deportation defense</p></div><div class="card"><h3>🌍 International</h3><p>Multi-country immigration matters</p></div></div></div></section>
-<section style="background:#f0f8ff;padding:60px 20px;border-radius:12px"><div class="container"><h2>Our Core Values</h2><div class="grid-3"><div class="card"><h3>🤝 Integrity</h3><p>Honest, transparent, ethical dealings</p></div><div class="card"><h3>💡 Excellence</h3><p>Exceptional results & meticulous detail</p></div><div class="card"><h3>❤️ Compassion</h3><p>Empathy & genuine client care</p></div><div class="card"><h3>🚀 Innovation</h3><p>Modern technology & streamlined processes</p></div><div class="card"><h3>🌟 Commitment</h3><p>Deep dedication to client success</p></div><div class="card"><h3>🌐 Diversity</h3><p>Serving all cultures equally well</p></div></div></div></section>
-<section><div class="container"><h2>Meet Our Team</h2><div class="grid-3"><div class="card" style="text-align:center"><div style="font-size:4rem">👨‍⚖️</div><h3 style="color:#008080">João Santos</h3><p style="font-weight:600;color:#90ee90">Senior Immigration Attorney</p><p>15+ years international law</p></div><div class="card" style="text-align:center"><div style="font-size:4rem">👩‍⚖️</div><h3 style="color:#008080">Dr. Maria Silva</h3><p style="font-weight:600;color:#90ee90">Family Law Specialist</p><p>PhD in International Law</p></div><div class="card" style="text-align:center"><div style="font-size:4rem">👨‍💼</div><h3 style="color:#008080">Carlos Mendes</h3><p style="font-weight:600;color:#90ee90">Case Manager</p><p>Client communication & processing</p></div></div></div></section>
-<section class="cta"><div class="container"><h2 style="color:white">Ready to Work With Us?</h2><p style="font-size:1.1rem;margin:20px 0 40px">Schedule your free consultation today</p><a href="contact.html" class="btn" style="background:white;color:#008080">Schedule Consultation</a></div></section>
-</main><div id="footer-placeholder"></div>
-<script src="js/partials-loader.js"></script>
-<script>
-document.getElementById('header-placeholder').innerHTML = '<div data-partial="header"></div>';
-document.getElementById('footer-placeholder').innerHTML = '<div data-partial="footer"></div>';
-const scrollBtn = document.getElementById('scroll-to-top');
-window.addEventListener('scroll', () => { scrollBtn.style.opacity = scrollBtn.style.visibility = window.pageYOffset > 300 ? '1' : '0'; });
-scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-</script>
-</body></html>
+<body>
+    <div data-partial="header"></div>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Everything About Tocantins</h1>
+        <p>Your Complete Immigration and Lifestyle Guide to Palmas</p>
+    </div>
+    
+    <div class="container">
+        <!-- Quick Facts -->
+        <h2>Quick Facts at a Glance</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-label">Capital</div>
+                <div class="stat-value">Palmas</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Population</div>
+                <div class="stat-value">1,600,000</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Area</div>
+                <div class="stat-value">277,620 km²</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Region</div>
+                <div class="stat-value">North</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Timezone</div>
+                <div class="stat-value">GMT-3</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Cost of Living</div>
+                <div class="stat-value" style="font-size: 0.9rem;">Low to Moderate - Affordable</div>
+            </div>
+        </div>
+        
+        <!-- State Overview -->
+        <div class="section">
+            <h2>State Overview</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Tocantins is located in the North region of Brazil with its capital in Palmas. 
+                With a population of 1,600,000, Tocantins offers a unique blend of 
+                opportunities and lifestyle experiences. The state is characterized by its Agriculture, Cattle Ranching, Energy, Forestry 
+                and is known for being Agricultural professionals, explorers.
+            </p>
+            <div class="highlight">
+                <strong>Climate:</strong> Tropical - Hot and humid, rainy November-May<br>
+                <strong>Temperature Range:</strong> 24-33°C<br>
+                <strong>Average Monthly Salary:</strong> R$ 2,600-5,400 average monthly salary
+            </div>
+        </div>
+        
+        <!-- Major Cities -->
+        <div class="section">
+            <h2>🏙️ Major Cities</h2>
+            <p>Discover the main urban centers in Tocantins:</p>
+            <ul>
+                <li>Palmas (capital, 300k)</li><li>Araguaína (180k)</li><li>Gurupi</li>
+            </ul>
+        </div>
+        
+        <!-- Economy & Employment -->
+        <div class="section">
+            <h2>💼 Economy & Employment</h2>
+            <p style="font-size: 1.05rem;">
+                Tocantins's economy is built on Agriculture, Cattle Ranching, Energy, Forestry. The state offers significant opportunities 
+                for both local and international professionals seeking employment and business ventures.
+            </p>
+            
+            <h3>Economic Sectors:</h3>
+            <ul>
+                <li>Hydroelectric power generation</li><li>Grain and soybean production</li><li>Cattle ranching</li><li>Mining and forestry</li>
+            </ul>
+            
+            <h3>Job Opportunities by Sector:</h3>
+            <ul>
+                <li>Energy and hydroelectric</li><li>Agriculture and agribusiness</li><li>Cattle ranching</li><li>Government</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Employment Outlook:</strong> Tocantins presents strong opportunities across multiple sectors, 
+                with salaries ranging from R$ 2,600-5,400 average monthly salary for average positions.
+            </div>
+        </div>
+        
+        <!-- Education -->
+        <div class="section">
+            <h2>🎓 Education & Universities</h2>
+            <p>
+                Tocantins boasts several excellent universities and educational institutions, making it ideal for 
+                students and families seeking quality education.
+            </p>
+            
+            <h3>Leading Universities:</h3>
+            <ul>
+                <li>Federal University of Tocantins (UFT)</li><li>Tocantins State University (UNITINS)</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Education Options:</strong> From public universities to private institutions, Tocantins offers 
+                diverse educational opportunities. Many universities offer programs in English for international students.
+            </div>
+        </div>
+        
+        <!-- Cost of Living -->
+        <div class="section">
+            <h2>💰 Cost of Living & Housing</h2>
+            
+            <h3>Overall Cost of Living</h3>
+            <p>Low to Moderate - Affordable</p>
+            
+            <h3>Housing Costs</h3>
+            <p>
+                <strong>1-Bedroom Apartment:</strong> R$ 1,000-2,200 for 1-bedroom apartment<br>
+                This varies depending on location - central areas are more expensive, while suburbs offer better value.
+            </p>
+            
+            <div class="comparison">
+                <div class="comparison-item">
+                    <strong>🏠 Housing</strong><br>
+                    R$ 1,000-2,200 for 1-bedroom apartment (city center)<br>
+                    20-30% less in suburbs
+                </div>
+                <div class="comparison-item">
+                    <strong>🍔 Food & Dining</strong><br>
+                    Local restaurants: R$ 25-50<br>
+                    Groceries: Very affordable
+                </div>
+                <div class="comparison-item">
+                    <strong>🚗 Transportation</strong><br>
+                    Public transport: R$ 5-10 per ride<br>
+                    Uber available in major cities
+                </div>
+                <div class="comparison-item">
+                    <strong>🏋️ Entertainment</strong><br>
+                    Gym: R$ 80-150/month<br>
+                    Movies: R$ 30-50
+                </div>
+            </div>
+        </div>
+        
+        <!-- Climate & Geography -->
+        <div class="section">
+            <h2>🌡️ Climate & Geography</h2>
+            
+            <h3>Climate Details</h3>
+            <p>
+                <strong>Climate Type:</strong> Tropical - Hot and humid, rainy November-May<br>
+                <strong>Temperature Range:</strong> 24-33°C<br>
+            </p>
+            
+            <h3>What to Expect:</h3>
+            <ul>
+                <li>Weather patterns and seasonal variations</li>
+                <li>Best times to visit based on climate</li>
+                <li>Appropriate clothing and preparations needed</li>
+                <li>Humidity and rainfall patterns</li>
+            </ul>
+        </div>
+        
+        <!-- Healthcare -->
+        <div class="section">
+            <h2>🏥 Healthcare System</h2>
+            <p>
+                <strong>Public Healthcare (SUS):</strong> Available to all residents, including immigrants<br>
+                <strong>Private Healthcare:</strong> Basic to moderate healthcare<br>
+            </p>
+            
+            <h3>Healthcare Access:</h3>
+            <ul>
+                <li>Universal health system (SUS) coverage</li>
+                <li>Quality private hospitals and clinics</li>
+                <li>Dental and specialist services available</li>
+                <li>Medications available at reasonable costs</li>
+                <li>International health insurance options</li>
+            </ul>
+        </div>
+        
+        <!-- Transportation -->
+        <div class="section">
+            <h2>🚗 Transportation</h2>
+            <p>
+                <strong>Primary Mode:</strong> Air (Palmas airport), highways, limited options<br>
+            </p>
+            
+            <h3>Getting Around:</h3>
+            <ul>
+                <li>Public transportation (buses, metro where available)</li>
+                <li>Taxi and ride-sharing services (Uber, 99)</li>
+                <li>Inter-city bus services</li>
+                <li>Air travel for longer distances</li>
+                <li>Bike-friendly areas in many cities</li>
+            </ul>
+        </div>
+        
+        <!-- Culture & Attractions -->
+        <div class="section">
+            <h2>🎭 Culture & Main Attractions</h2>
+            <p>
+                Tocantins is known for Fish dishes, regional cuisine, local specialties. 
+                The state offers numerous attractions and cultural experiences for residents and visitors.
+            </p>
+            
+            <h3>Top Attractions & Activities:</h3>
+            <ul>
+                <li>Palmas planned modern city</li><li>Araguaia River</li><li>Ecological parks</li><li>Indigenous culture</li><li>Nature reserves</li>
+            </ul>
+            
+            <h3>Local Food Culture</h3>
+            <p>
+                Tocantins is famous for: <strong>Fish dishes, regional cuisine, local specialties</strong>
+            </p>
+        </div>
+        
+        <!-- Unique Features -->
+        <div class="section">
+            <h2>⭐ What Makes Tocantins Special</h2>
+            <ul>
+                <li>Brazil's newest state (1989)</li><li>Modern planned capital</li><li>Agricultural frontier</li><li>River tourism</li>
+            </ul>
+        </div>
+        
+        <!-- Nightlife & Entertainment -->
+        <div class="section">
+            <h2>🌙 Nightlife & Entertainment</h2>
+            <p>
+                Tocantins offers: <strong>Casual local bars and restaurants</strong>
+            </p>
+            
+            <h3>Entertainment Options:</h3>
+            <ul>
+                <li>Bars and clubs in major cities</li>
+                <li>Live music venues and cultural shows</li>
+                <li>Restaurants and dining experiences</li>
+                <li>Beach activities and water sports</li>
+                <li>Cultural festivals and events</li>
+            </ul>
+        </div>
+        
+        <!-- Immigration Tips -->
+        <div class="section expat-tips">
+            <h2>💡 Immigration & Expat Tips</h2>
+            <ul>
+                <li>Learn Portuguese - essential for integration and employment</li>
+                <li>Register with local authorities within required timeframe</li>
+                <li>Open a bank account early - necessary for housing and employment</li>
+                <li>Get a CPF (tax ID) - required for most transactions</li>
+                <li>Explore neighborhoods before committing to housing</li>
+                <li>Join expat groups for support and networking</li>
+                <li>Budget accordingly based on your lifestyle</li>
+                <li>Familiarize yourself with local customs and culture</li>
+                <li>Keep important documents organized</li>
+                <li>Stay updated on visa requirements and renewals</li>
+            </ul>
+        </div>
+        
+        <!-- Why Choose This State -->
+        <div class="section">
+            <h2>✅ Why Choose Tocantins?</h2>
+            <ul>
+                <li><strong>Welcoming Community:</strong> Agricultural professionals, explorers</li>
+                <li><strong>Cost of Living:</strong> Low to Moderate - Affordable</li>
+                <li><strong>Employment:</strong> Strong opportunities in multiple sectors</li>
+                <li><strong>Education:</strong> Quality universities and schools</li>
+                <li><strong>Healthcare:</strong> Accessible and affordable medical services</li>
+                <li><strong>Culture:</strong> Rich traditions and modern amenities</li>
+                <li><strong>Lifestyle:</strong> Excellent balance of work and leisure</li>
+                <li><strong>Connectivity:</strong> Good transportation and communication</li>
+            </ul>
+        </div>
+        
+        <!-- Quick Comparison Table -->
+        <div class="section">
+            <h2>📊 At a Glance Comparison</h2>
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Rating</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Cost of Living</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Low to Moderate - Affordable</td>
+                    </tr>
+                    <tr>
+                        <td>Job Opportunities</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Multiple sectors with growth potential</td>
+                    </tr>
+                    <tr>
+                        <td>Education Quality</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Excellent universities available</td>
+                    </tr>
+                    <tr>
+                        <td>Healthcare</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Basic to moderate healthcare</td>
+                    </tr>
+                    <tr>
+                        <td>Safety & Security</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Varies by neighborhood - research before moving</td>
+                    </tr>
+                    <tr>
+                        <td>Climate</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Tropical - Hot and humid, rainy November-May</td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment & Culture</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>Rich cultural experiences and activities</td>
+                    </tr>
+                    <tr>
+                        <td>Expat Community</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Growing international presence</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="section">
+            <h2>❓ Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="FAQ-toggle">
+                    <strong>What visa should I apply for to move to Tocantins?</strong>
+                </div>
+                <div class="faq-content">
+                    <p>This depends on your situation:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Work Visa:</strong> If you have a job offer</li>
+                        <li><strong>Investor Visa:</strong> If investing in a business</li>
+                        <li><strong>Student Visa:</strong> To study at universities</li>
+                        <li><strong>Temporary Resident:</strong> For renewable 2-year visas</li>
+                        <li><strong>Retirement Visa:</strong> If you have sufficient income</li>
+                    </ul>
+                    <p style="margin-top: 10px;">Consult the Brazilian consulate for specific requirements.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="FAQ-toggle">
+                    <strong>Is Portuguese required to live in Tocantins?</strong>
+                </div>
+                <div class="faq-content">
+                    <p>While you can initially function without Portuguese, it's <strong>highly recommended</strong> to learn it because:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Employment opportunities increase significantly</li>
+                        <li>Social integration becomes easier</li>
+                        <li>Daily transactions are simpler</li>
+                        <li>You can better enjoy the culture</li>
+                        <li>Government services require it</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="FAQ-toggle">
+                    <strong>What are typical monthly expenses?</strong>
+                </div>
+                <div class="faq-content">
+                    <p><strong>Budget Estimate (single person):</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Rent: R$ 1,000-2,200 for 1-bedroom apartment for 1-bedroom</li>
+                        <li>Food & Groceries: R$ 600-1,000</li>
+                        <li>Transportation: R$ 100-200</li>
+                        <li>Utilities: R$ 150-250</li>
+                        <li>Entertainment: R$ 200-400</li>
+                        <li><strong>Total: R$ 2,500-5,500 per month</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="FAQ-toggle">
+                    <strong>How is healthcare accessed?</strong>
+                </div>
+                <div class="faq-content">
+                    <p><strong>Options:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>SUS (Public):</strong> Free/minimal cost, available to residents</li>
+                        <li><strong>Private:</strong> Better facilities, faster service, costs R$ 200-500/month</li>
+                        <li><strong>International Insurance:</strong> Recommended for comprehensive coverage</li>
+                    </ul>
+                    <p style="margin-top: 10px;">Most residents use a combination of public and private care.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="FAQ-toggle">
+                    <strong>What's the job market like?</strong>
+                </div>
+                <div class="faq-content">
+                    <p>Tocantins's job market is characterized by:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Growth sectors: ['Energy and hydroelectric', 'Agriculture and agribusiness', 'Cattle ranching', 'Government']</li>
+                        <li>Competitive salaries: R$ 2,600-5,400 average monthly salary</li>
+                        <li>Portuguese requirement: Essential for most jobs</li>
+                        <li>Visa sponsorship: Available through employers</li>
+                        <li>Remote work: Growing opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h2>Ready to Start Your Immigration Journey to Tocantins?</h2>
+            <p>We're here to help you navigate the immigration process and settle into your new home in Tocantins!</p>
+            <button class="cta-button" onclick="window.location.href='/contact'">Get Professional Consultation</button>
+            <button class="cta-button" onclick="window.location.href='/services'">Explore Our Services</button>
+        </div>
+        
+        <!-- Additional Resources -->
+        <div class="section">
+            <h2>📚 Additional Resources</h2>
+            <ul>
+                <li>Brazilian government official website</li>
+                <li>Local immigration office (Polícia Federal)</li>
+                <li>Expat community forums and groups</li>
+                <li>State tourism bureau</li>
+                <li>Chamber of commerce</li>
+                <li>International schools and universities</li>
+                <li>Real estate platforms</li>
+                <li>Job boards and recruitment agencies</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div data-partial="footer"></div>
+    
+    <button id="scroll-to-top">↑</button>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('scroll-to-top');
+            btn.classList.toggle('show', window.scrollY > 300);
+        });
+        
+        document.getElementById('scroll-to-top').addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.FAQ-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
