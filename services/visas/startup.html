@@ -3,10 +3,12 @@
 <head>
     <!-- Basic meta and viewport -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <!-- Dynamic SEO & Meta Tags -->
     <title>Startup | Tocantins</title>
+    <link rel="stylesheet" href="../../css/design-system.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow">
@@ -23,9 +25,7 @@
     <meta name="twitter:title" content="Startup | Tocantins">
     <meta name="twitter:description" content="">
     
-    <!-- Global stylesheet and deferred scripts -->
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script src="../../../js/main.js" defer></script>
+    <!-- Global stylesheet and deferred scripts -->    <script src="../../../js/main.js" defer></script>
     
     <!-- Partials loaded via data-include -->
     <div data-include="../../../partials/head-meta.html"></div>
@@ -34,6 +34,54 @@
     <div data-include="../../../partials/preload-fonts.html"></div>
     <div data-include="../../../partials/preload-critical.html"></div>
     <div data-include="../../../partials/analytics-head.html"></div>
+    
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Startup Residence in Tocantins | Immigrate to Brazil",
+        "description": "Residence for innovative entrepreneurs. Expert assistance for startup residence in Brazil.",
+        "provider": {
+                "@type": "Organization",
+                "name": "ImmigrateToBrazil",
+                "url": "https://immigratetobrazil.com",
+                "sameAs": [
+                        "https://www.facebook.com/immigratetobrazil",
+                        "https://www.linkedin.com/company/immigratetobrazil"
+                ]
+        },
+        "areaServed": {
+                "@type": "State",
+                "name": "TO"
+        },
+        "serviceType": "startup",
+        "url": "https://immigrate-to.com/services/startup.html"
+}
+    </script>
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Startup Residence in Tocantins | Immigrate to Brazil",
+        "description": "Residence for innovative entrepreneurs. Expert assistance for startup residence in Brazil.",
+        "provider": {
+                "@type": "Organization",
+                "name": "ImmigrateToBrazil",
+                "url": "https://immigratetobrazil.com",
+                "sameAs": [
+                        "https://www.facebook.com/immigratetobrazil",
+                        "https://www.linkedin.com/company/immigratetobrazil"
+                ]
+        },
+        "areaServed": {
+                "@type": "State",
+                "name": "TO"
+        },
+        "serviceType": "startup",
+        "url": "https://immigrate-to.com/services/startup.html"
+}
+    </script>
+    <script src="../../js/partials-loader.js" defer></script>
 </head>
 <body class="state-to">
     
@@ -170,5 +218,6 @@
     
     <!-- Analytics body part -->
     <div data-include="../../../partials/analytics-body.html"></div>
+    <div data-partial="footer"></div>
 </body>
 </html>

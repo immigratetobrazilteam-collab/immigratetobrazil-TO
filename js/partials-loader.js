@@ -8,23 +8,39 @@
 
   // ============ PARTIAL LOADER ============
   async function loadPartials() {
-    const placeholders = document.querySelectorAll('[data-partial]');
-    
-    for (const placeholder of placeholders) {
+    // Load by data-partial attribute
+    const dataPlaceholders = document.querySelectorAll('[data-partial]');
+    for (const placeholder of dataPlaceholders) {
       const partialName = placeholder.dataset.partial;
-      try {
-        const response = await fetch(`partials/${partialName}.html`);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        
-        const html = await response.text();
-        placeholder.innerHTML = html;
-        
-        // Trigger any initialization after loading
-        initializePartial(placeholder);
-      } catch (error) {
-        console.warn(`Failed to load partial: ${partialName}`, error);
-        placeholder.innerHTML = `<!-- Failed to load ${partialName} -->`;
+      await loadPartialInto(placeholder, partialName);
+    }
+
+    // Load by ID (header, footer, cta)
+    const partialIds = ['header-placeholder', 'footer-placeholder', 'cta-placeholder'];
+    for (const id of partialIds) {
+      const placeholder = document.getElementById(id);
+      if (placeholder) {
+        let partialName = id.replace('-placeholder', '');
+        if (partialName === 'cta') partialName = 'contact-cta';
+        await loadPartialInto(placeholder, partialName);
       }
+    }
+  }
+
+  // Helper to load a partial into an element
+  async function loadPartialInto(placeholder, partialName) {
+    try {
+      const response = await fetch(`partials/${partialName}.html`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      
+      const html = await response.text();
+      placeholder.innerHTML = html;
+      
+      // Trigger any initialization after loading
+      initializePartial(placeholder);
+    } catch (error) {
+      console.warn(`Failed to load partial: ${partialName}`, error);
+      placeholder.innerHTML = `<!-- Failed to load ${partialName} -->`;
     }
   }
 

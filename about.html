@@ -2,81 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comprehensive guide to Tocantins, Brazil. Everything about Palmas, lifestyle, economy, education, and immigration.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="Comprehensive guide to Tocantins, Brazil. Everything about Palmas, lifestyle, economy, education, and immigration.">
     <title>Complete Guide to Tocantins | Immigrate to Brazil</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: #333; background: #f8f9fa; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        h1 { color: #222; font-size: 2.8rem; margin: 40px 0 15px 0; border-bottom: 3px solid #667eea; padding-bottom: 15px; }
-        h2 { color: #667eea; font-size: 2rem; margin: 50px 0 25px 0; padding-bottom: 10px; border-bottom: 2px solid #667eea20; }
-        h3 { color: #764ba2; font-size: 1.4rem; margin: 30px 0 15px 0; }
-        h4 { color: #667eea; font-size: 1.1rem; margin: 20px 0 10px 0; font-weight: 600; }
-        
-        p { margin: 15px 0; font-size: 1.05rem; }
-        
-        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; margin: 30px 0; border-radius: 15px; text-align: center; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3); }
-        .hero h1 { color: white; border: none; margin: 0 0 15px 0; }
-        .hero p { font-size: 1.3rem; }
-        
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
-        .stat-box { background: white; padding: 25px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid #667eea; }
-        .stat-box .stat-value { font-size: 2.2rem; color: #667eea; font-weight: bold; margin: 10px 0; }
-        .stat-box .stat-label { color: #666; font-weight: 600; }
-        
-        .section { background: white; padding: 40px; margin: 30px 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
-        .section ul { list-style: none; padding: 0; }
-        .section li { padding: 12px 0; padding-left: 30px; position: relative; line-height: 1.6; }
-        .section li:before { content: "▹"; position: absolute; left: 0; color: #667eea; font-weight: bold; font-size: 1.3rem; }
-        
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 30px 0; }
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 30px 0; }
-        
-        .highlight { background: linear-gradient(120deg, #667eea15 0%, #764ba215 100%); padding: 20px; border-left: 4px solid #667eea; border-radius: 5px; margin: 20px 0; }
-        .highlight strong { color: #667eea; }
-        
-        .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
-        .comparison-item { background: #f0f4ff; padding: 15px; border-radius: 8px; }
-        .comparison-item strong { color: #667eea; }
-        
-        .cta-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px; margin: 50px 0; border-radius: 15px; text-align: center; }
-        .cta-section h2 { color: white; border: none; }
-        .cta-button { background: white; color: #667eea; padding: 15px 40px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; margin: 20px 10px; display: inline-block; transition: all 0.3s; }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
-        
-        .table-responsive { overflow-x: auto; margin: 20px 0; }
-        table { width: 100%; border-collapse: collapse; }
-        table th { background: #667eea; color: white; padding: 15px; text-align: left; }
-        table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
-        table tr:hover { background: #f8f9fa; }
-        
-        .timeline { position: relative; padding-left: 40px; margin: 30px 0; }
-        .timeline-item { position: relative; margin-bottom: 25px; }
-        .timeline-item:before { content: "●"; position: absolute; left: -45px; font-size: 1.5rem; color: #667eea; }
-        .timeline-item strong { color: #667eea; }
-        
-        .FAQ-toggle { cursor: pointer; background: #f0f4ff; padding: 15px; margin: 10px 0; border-radius: 8px; user-select: none; }
-        .FAQ-toggle:hover { background: #e8ebff; }
-        .faq-content { display: none; padding: 15px; background: white; border-left: 4px solid #667eea; }
-        .faq-content.active { display: block; }
-        
-        .expat-tips { background: linear-gradient(120deg, #fff5f7 0%, #ffe0e6 100%); padding: 25px; border-radius: 10px; margin: 20px 0; }
-        .expat-tips li { color: #d63384; padding-left: 30px; }
-        .expat-tips li:before { color: #d63384; }
-        
-        #scroll-to-top { position: fixed; bottom: 30px; right: 30px; background: #667eea; color: white; width: 50px; height: 50px; border: none; border-radius: 50%; cursor: pointer; font-size: 1.5rem; display: none; box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4); }
-        #scroll-to-top.show { display: block; }
-        
-        @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.6rem; }
-            .grid-2 { grid-template-columns: 1fr; }
-            .hero { padding: 40px 20px; }
-            .section { padding: 20px; }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    <script src="js/partials-loader.js" defer></script>
+    <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
     <div data-partial="header"></div>
@@ -113,14 +45,14 @@
             </div>
             <div class="stat-box">
                 <div class="stat-label">Cost of Living</div>
-                <div class="stat-value" style="font-size: 0.9rem;">Low to Moderate - Affordable</div>
+                <div class="stat-value">Low to Moderate - Affordable</div>
             </div>
         </div>
         
         <!-- State Overview -->
         <div class="section">
             <h2>State Overview</h2>
-            <p style="font-size: 1.1rem; line-height: 1.8;">
+            <p>
                 Tocantins is located in the North region of Brazil with its capital in Palmas. 
                 With a population of 1,600,000, Tocantins offers a unique blend of 
                 opportunities and lifestyle experiences. The state is characterized by its Agriculture, Cattle Ranching, Energy, Forestry 
@@ -135,7 +67,7 @@
         
         <!-- Major Cities -->
         <div class="section">
-            <h2>🏙️ Major Cities</h2>
+            <h2><i class="fas fa-city"></i> Major Cities</h2>
             <p>Discover the main urban centers in Tocantins:</p>
             <ul>
                 <li>Palmas (capital, 300k)</li><li>Araguaína (180k)</li><li>Gurupi</li>
@@ -144,8 +76,8 @@
         
         <!-- Economy & Employment -->
         <div class="section">
-            <h2>💼 Economy & Employment</h2>
-            <p style="font-size: 1.05rem;">
+            <h2><i class="fas fa-briefcase"></i> Economy & Employment</h2>
+            <p>
                 Tocantins's economy is built on Agriculture, Cattle Ranching, Energy, Forestry. The state offers significant opportunities 
                 for both local and international professionals seeking employment and business ventures.
             </p>
@@ -168,7 +100,7 @@
         
         <!-- Education -->
         <div class="section">
-            <h2>🎓 Education & Universities</h2>
+            <h2><i class="fas fa-graduation-cap"></i> Education & Universities</h2>
             <p>
                 Tocantins boasts several excellent universities and educational institutions, making it ideal for 
                 students and families seeking quality education.
@@ -187,7 +119,7 @@
         
         <!-- Cost of Living -->
         <div class="section">
-            <h2>💰 Cost of Living & Housing</h2>
+            <h2><i class="fas fa-money-bill-wave"></i> Cost of Living & Housing</h2>
             
             <h3>Overall Cost of Living</h3>
             <p>Low to Moderate - Affordable</p>
@@ -243,7 +175,7 @@
         
         <!-- Healthcare -->
         <div class="section">
-            <h2>🏥 Healthcare System</h2>
+            <h2><i class="fas fa-hospital"></i> Healthcare System</h2>
             <p>
                 <strong>Public Healthcare (SUS):</strong> Available to all residents, including immigrants<br>
                 <strong>Private Healthcare:</strong> Basic to moderate healthcare<br>
@@ -278,7 +210,7 @@
         
         <!-- Culture & Attractions -->
         <div class="section">
-            <h2>🎭 Culture & Main Attractions</h2>
+            <h2><i class="fas fa-masks-theater"></i> Culture & Main Attractions</h2>
             <p>
                 Tocantins is known for Fish dishes, regional cuisine, local specialties. 
                 The state offers numerous attractions and cultural experiences for residents and visitors.
@@ -297,7 +229,7 @@
         
         <!-- Unique Features -->
         <div class="section">
-            <h2>⭐ What Makes Tocantins Special</h2>
+            <h2><i class="fas fa-star"></i> What Makes Tocantins Special</h2>
             <ul>
                 <li>Brazil's newest state (1989)</li><li>Modern planned capital</li><li>Agricultural frontier</li><li>River tourism</li>
             </ul>
@@ -322,7 +254,7 @@
         
         <!-- Immigration Tips -->
         <div class="section expat-tips">
-            <h2>💡 Immigration & Expat Tips</h2>
+            <h2><i class="fas fa-lightbulb"></i> Immigration & Expat Tips</h2>
             <ul>
                 <li>Learn Portuguese - essential for integration and employment</li>
                 <li>Register with local authorities within required timeframe</li>
@@ -339,7 +271,7 @@
         
         <!-- Why Choose This State -->
         <div class="section">
-            <h2>✅ Why Choose Tocantins?</h2>
+            <h2><i class="fas fa-check-circle"></i> Why Choose Tocantins?</h2>
             <ul>
                 <li><strong>Welcoming Community:</strong> Agricultural professionals, explorers</li>
                 <li><strong>Cost of Living:</strong> Low to Moderate - Affordable</li>
@@ -354,7 +286,7 @@
         
         <!-- Quick Comparison Table -->
         <div class="section">
-            <h2>📊 At a Glance Comparison</h2>
+            <h2><i class="fas fa-chart-bar"></i> At a Glance Comparison</h2>
             <div class="table-responsive">
                 <table>
                     <tr>
@@ -364,42 +296,42 @@
                     </tr>
                     <tr>
                         <td>Cost of Living</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Low to Moderate - Affordable</td>
                     </tr>
                     <tr>
                         <td>Job Opportunities</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Multiple sectors with growth potential</td>
                     </tr>
                     <tr>
                         <td>Education Quality</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Excellent universities available</td>
                     </tr>
                     <tr>
                         <td>Healthcare</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Basic to moderate healthcare</td>
                     </tr>
                     <tr>
                         <td>Safety & Security</td>
-                        <td>⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Varies by neighborhood - research before moving</td>
                     </tr>
                     <tr>
                         <td>Climate</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Tropical - Hot and humid, rainy November-May</td>
                     </tr>
                     <tr>
                         <td>Entertainment & Culture</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Rich cultural experiences and activities</td>
                     </tr>
                     <tr>
                         <td>Expat Community</td>
-                        <td>⭐⭐⭐</td>
+                        <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
                         <td>Growing international presence</td>
                     </tr>
                 </table>
@@ -416,14 +348,14 @@
                 </div>
                 <div class="faq-content">
                     <p>This depends on your situation:</p>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
+                    <ul>
                         <li><strong>Work Visa:</strong> If you have a job offer</li>
                         <li><strong>Investor Visa:</strong> If investing in a business</li>
                         <li><strong>Student Visa:</strong> To study at universities</li>
                         <li><strong>Temporary Resident:</strong> For renewable 2-year visas</li>
                         <li><strong>Retirement Visa:</strong> If you have sufficient income</li>
                     </ul>
-                    <p style="margin-top: 10px;">Consult the Brazilian consulate for specific requirements.</p>
+                    <p>Consult the Brazilian consulate for specific requirements.</p>
                 </div>
             </div>
             
@@ -433,7 +365,7 @@
                 </div>
                 <div class="faq-content">
                     <p>While you can initially function without Portuguese, it's <strong>highly recommended</strong> to learn it because:</p>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
+                    <ul>
                         <li>Employment opportunities increase significantly</li>
                         <li>Social integration becomes easier</li>
                         <li>Daily transactions are simpler</li>
@@ -449,7 +381,7 @@
                 </div>
                 <div class="faq-content">
                     <p><strong>Budget Estimate (single person):</strong></p>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
+                    <ul>
                         <li>Rent: R$ 1,000-2,200 for 1-bedroom apartment for 1-bedroom</li>
                         <li>Food & Groceries: R$ 600-1,000</li>
                         <li>Transportation: R$ 100-200</li>
@@ -466,12 +398,12 @@
                 </div>
                 <div class="faq-content">
                     <p><strong>Options:</strong></p>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
+                    <ul>
                         <li><strong>SUS (Public):</strong> Free/minimal cost, available to residents</li>
                         <li><strong>Private:</strong> Better facilities, faster service, costs R$ 200-500/month</li>
                         <li><strong>International Insurance:</strong> Recommended for comprehensive coverage</li>
                     </ul>
-                    <p style="margin-top: 10px;">Most residents use a combination of public and private care.</p>
+                    <p>Most residents use a combination of public and private care.</p>
                 </div>
             </div>
             
@@ -481,7 +413,7 @@
                 </div>
                 <div class="faq-content">
                     <p>Tocantins's job market is characterized by:</p>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
+                    <ul>
                         <li>Growth sectors: ['Energy and hydroelectric', 'Agriculture and agribusiness', 'Cattle ranching', 'Government']</li>
                         <li>Competitive salaries: R$ 2,600-5,400 average monthly salary</li>
                         <li>Portuguese requirement: Essential for most jobs</li>
@@ -537,5 +469,6 @@
             });
         });
     </script>
+            <script src="js/design-system.js"></script>
 </body>
 </html>

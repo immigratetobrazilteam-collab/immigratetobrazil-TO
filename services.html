@@ -2,33 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Tocantins | Immigrate to Brazil</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        h1 { color: #006666; font-size: 2.5rem; margin: 40px 0; text-align: center; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 50px 0; }
-        .service-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #40E0D0; }
-        .service-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .service-icon { font-size: 3rem; margin-bottom: 15px; }
-        .service-title { color: #006666; font-size: 1.3rem; margin-bottom: 10px; }
-        ul { list-style: none; margin: 15px 0; }
-        li { padding: 8px 0; padding-left: 25px; position: relative; }
-        li:before { content: "✓"; position: absolute; left: 0; color: #FFD700; font-weight: bold; }
-        .btn { background: #006666; color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 15px; }
-        .btn:hover { background: #40E0D0; }
-        #scroll-to-top { position: fixed; bottom: 30px; right: 30px; background: #006666; color: white; width: 50px; height: 50px; border: none; border-radius: 50%; cursor: pointer; font-weight: bold; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Services - Tocantins | Immigrate to Brazil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="js/partials-loader.js" defer></script>
+    <link rel="stylesheet" href="css/design-system.css">
 </head>
 <body>
     <div data-partial="header"></div>
     <div class="container">
-        <h1>🌊 Our Immigration Services in Tocantins</h1>
+        <h1><i class="fas fa-water"></i> Our Immigration Services in Tocantins</h1>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon">💼</div>
+                <div class="service-icon"><i class="fas fa-briefcase"></i></div>
                 <h2 class="service-title">Work Visas (VITEM)</h2>
                 <p>Professional employment visas for qualified workers seeking opportunities in Brazil.</p>
                 <ul>
@@ -72,7 +58,7 @@
                 <a href="contact.html" class="btn">Get Started</a>
             </div>
             <div class="service-card">
-                <div class="service-icon">🎭</div>
+                <div class="service-icon"><i class="fas fa-masks-theater"></i></div>
                 <h2 class="service-title">Artist & Performer Visas</h2>
                 <p>Special visas for cultural and artistic professionals.</p>
                 <ul>
@@ -97,6 +83,7 @@
     </div>
     <div data-partial="footer"></div>
     <button id="scroll-to-top">↑</button>
-    <script src="js/partials-loader.js"></script>
+    
+            <script src="js/design-system.js"></script>
 </body>
 </html>
