@@ -1,20 +1,22 @@
-<!-- Doctype for standards mode -->
 <!DOCTYPE html>
-<!-- HTML root with English lang -->
 <html lang="en">
-<!-- Head section -->
-<head>
-<!-- UTF-8 encoding -->
-    <meta charset="UTF-8">
-<!-- Dynamic title -->
-    <title>Contact – Tocantins</title>
-<!-- End head -->
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact Immigration Lawyer | Palmas</title><link rel="stylesheet" href="css/styles.css">
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system, BlinkMacSystemFont,'Segoe UI',Roboto;line-height:1.6;color:#333;background:#f9f9f9}.container{max-width:1200px;margin:0 auto;padding:0 20px}section{margin:80px 0}h1{font-size:3rem;color:#008080;font-weight:800}h2{font-size:2.3rem;color:#008080;font-weight:700}h3{font-size:1.3rem;font-weight:700}.hero{background:linear-gradient(135deg,#008080 0%,#20b2aa 100%);color:white;padding:100px 20px;text-align:center;border-radius:12px}.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px}.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}.card{background:white;padding:30px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);border-top:4px solid #90ee90}form{background:white;padding:40px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}input,textarea,select{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ddd;border-radius:6px;font-family:inherit;font-size:1rem}input:focus,textarea:focus,select:focus{outline:none;border-color:#008080;box-shadow:0 0 0 3px rgba(45,80,22,0.1)}.btn{background:#008080;color:white;padding:15px 35px;border:none;border-radius:6px;font-weight:600;cursor:pointer;width:100%;font-size:1rem}.cta{background:linear-gradient(135deg,#008080 0%,#20b2aa 100%);color:white;padding:80px 20px;text-align:center;border-radius:12px}#scroll-to-top{position:fixed;bottom:30px;right:30px;background:#008080;color:white;border:none;padding:12px 16px;border-radius:50px;opacity:0;visibility:hidden;transition:all 0.3s;z-index:99}</style>
 </head>
-<!-- Body -->
-<body>
-<!-- State name heading -->
-    <h1>Tocantins</h1>
-<!-- End body -->
-</body>
-<!-- End HTML -->
-</html>
+<body><div id="header-placeholder"></div><button id="scroll-to-top">↑ Top</button>
+<main id="main-content">
+<section class="hero"><div class="container"><h1>Contact Our Immigration Team</h1><p style="font-size:1.2rem;opacity:0.95">Get expert guidance on your immigration case in Palmas</p></div></section>
+<section><div class="container"><h2>Get In Touch</h2><div class="grid-2"><div class="card"><h3>📧 Email</h3><p><a href="mailto:info@immigratetobrazil.com" style="color:#008080;text-decoration:none;font-weight:600">info@immigratetobrazil.com</a></p></div><div class="card"><h3>📞 Phone</h3><p><a href="tel:+5585-98765-4321" style="color:#008080;text-decoration:none;font-weight:600">+55 85-98765-4321</a></p></div><div class="card"><h3>💬 WhatsApp</h3><p><a href="https://wa.me/5585987654321" style="color:#008080;text-decoration:none;font-weight:600" target="_blank">Chat on WhatsApp</a></p></div><div class="card"><h3>📍 Location</h3><p>Palmas, Brazil<br>Monday - Friday: 9AM - 6PM</p></div></div></div></section>
+<section><div class="container"><h2>Send Us a Message</h2><div style="max-width:700px;margin:0 auto"><form action="https://formspree.io/f/xlgeyvyo" method="POST"><input type="text" name="name" placeholder="Your Name" required><input type="email" name="email" placeholder="Your Email" required><input type="tel" name="phone" placeholder="Your Phone (Optional)"><select name="service" required><option value="">Select Service Type</option><option value="work_visa">Work Visa</option><option value="residency">Residency Permit</option><option value="citizenship">Citizenship</option><option value="family">Family Reunification</option><option value="appeal">Immigration Appeal</option><option value="other">Other</option></select><select name="urgency" required><option value="">Select Urgency Level</option><option value="urgent">Urgent (Within 1 week)</option><option value="soon">Soon (1-2 weeks)</option><option value="flexible">Flexible (2+ weeks)</option></select><textarea name="message" placeholder="Tell us about your situation..." rows="6" required></textarea><button type="submit" class="btn">Send Message</button></form></div></div></section>
+<section><div class="container"><h2>Frequently Asked Questions</h2><div class="grid-2"><div class="card"><h3>❓ How long does processing take?</h3><p>Most cases are processed within 60-90 days depending on complexity and document availability.</p></div><div class="card"><h3>💰 What are your fees?</h3><p>Fees vary by case type. We provide transparent quotes after initial consultation.</p></div><div class="card"><h3>📋 What documents do I need?</h3><p>We'll provide a complete checklist during your consultation specific to your case.</p></div><div class="card"><h3>🔄 Do you handle appeals?</h3><p>Yes, we specialize in immigration appeals and visa denial cases.</p></div></div></div></section>
+<section class="cta"><div class="container"><h2 style="color:white">Schedule Your Free Consultation</h2><p style="font-size:1.1rem;margin:20px 0 40px">Let's discuss your immigration goals and create a plan</p><a href="#contact" class="btn" style="background:white;color:#008080;font-size:0.95rem;padding:12px 30px">Go to Contact Form</a></div></section>
+</main><div id="footer-placeholder"></div>
+<script src="js/partials-loader.js"></script>
+<script>
+document.getElementById('header-placeholder').innerHTML = '<div data-partial="header"></div>';
+document.getElementById('footer-placeholder').innerHTML = '<div data-partial="footer"></div>';
+const scrollBtn = document.getElementById('scroll-to-top');
+window.addEventListener('scroll', () => { scrollBtn.style.opacity = scrollBtn.style.visibility = window.pageYOffset > 300 ? '1' : '0'; });
+scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body></html>

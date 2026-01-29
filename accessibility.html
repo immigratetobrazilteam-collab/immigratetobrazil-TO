@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Accessibility Statement | Palmas</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system, BlinkMacSystemFont,'Segoe UI',Roboto;line-height:1.8;color:#333;background:#f9f9f9}.container{max-width:1000px;margin:0 auto;padding:0 20px}section{margin:60px 0}h1{font-size:2.5rem;color:#008080;font-weight:800;margin-bottom:30px}h2{font-size:1.8rem;color:#008080;font-weight:700;margin-top:40px;margin-bottom:20px}.policy-box{background:white;padding:30px;border-radius:8px;border-left:4px solid #90ee90;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:20px}#scroll-to-top{position:fixed;bottom:30px;right:30px;background:#008080;color:white;border:none;padding:12px 16px;border-radius:50px;opacity:0;visibility:hidden;transition:all 0.3s;z-index:99}</style>
+</head>
+<body><div id="header-placeholder"></div><button id="scroll-to-top">↑ Top</button>
+<main id="main-content">
+<section><div class="container"><h1>Accessibility Statement</h1><p>We are committed to making our website accessible to all users.</p></div></section>
+
+<section><div class="container">
+<div class="policy-box"><h2>Our Commitment</h2><p>We strive to provide a website that is accessible to the widest possible audience, including people with disabilities. We comply with WCAG 2.1 Level AA accessibility standards.</p></div>
+
+<div class="policy-box"><h2>Keyboard Navigation</h2><p>Our website is fully navigable using keyboard. Press Tab to navigate, Enter to select. Use Shift+M to skip to main content and Shift+T to scroll to top.</p></div>
+
+<div class="policy-box"><h2>Screen Reader Support</h2><p>All content is structured with semantic HTML and ARIA labels for screen reader compatibility. Images include descriptive alt text.</p></div>
+
+<div class="policy-box"><h2>Color & Contrast</h2><p>We use sufficient color contrast ratios (at least 4.5:1 for text) to ensure readability for people with low vision.</p></div>
+
+<div class="policy-box"><h2>Text & Font</h2><p>We use readable fonts and allow text resizing. No information is conveyed by color alone.</p></div>
+
+<div class="policy-box"><h2>Forms</h2><p>All form fields are properly labeled and marked as required where applicable. Error messages are clear and helpful.</p></div>
+
+<div class="policy-box"><h2>Video & Audio</h2><p>Videos include captions and transcripts. Audio content has transcripts available.</p></div>
+
+<div class="policy-box"><h2>Report Issues</h2><p>If you encounter accessibility barriers, please contact us at <strong>accessibility@immigratetobrazil.com</strong>. We will work to resolve issues promptly.</p></div>
+</div></section>
+</main><div id="footer-placeholder"></div>
+<script src="js/partials-loader.js"></script>
+<script>
+document.getElementById('header-placeholder').innerHTML = '<div data-partial="header"></div>';
+document.getElementById('footer-placeholder').innerHTML = '<div data-partial="footer"></div>';
+const scrollBtn = document.getElementById('scroll-to-top');
+window.addEventListener('scroll', () => { scrollBtn.style.opacity = scrollBtn.style.visibility = window.pageYOffset > 300 ? '1' : '0'; });
+scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body></html>

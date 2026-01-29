@@ -1,0 +1,82 @@
+# Robots.txt - Search Engine Crawler Directives
+# Last updated: January 2026
+
+# Allow all search engines by default
+User-agent: *
+Allow: /
+
+# Specific crawler rules
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: Slurp
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block aggressive/malicious bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: YandexBot
+Crawl-delay: 2
+
+# Default crawl delay
+User-agent: *
+Crawl-delay: 2
+
+# Disallow sensitive/private paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /config/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /uploads/
+
+# Allow public assets
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /partials/
+Allow: /images/
+
+# Disallow script exploits
+Disallow: /*.php$
+Disallow: /*.asp$
+Disallow: /*.jsp$
+Disallow: /*login
+Disallow: /*admin
+Disallow: /*password
+Disallow: /*api
+
+# Disallow query strings that may be duplicates
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*page=
+Disallow: /*?*utm_
+
+# Sitemaps
+Sitemap: https://immigratetobrazil.com/sitemap.html
+Sitemap: https://immigratetobrazil.com/sitemap.xml
+
+# Rules for specific patterns
+# No framing/cloaking allowed
+User-agent: *
+Disallow: /*%
+
+# Cache directives
+User-agent: *
+Disallow: /*cache

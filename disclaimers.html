@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Disclaimers | Palmas</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system, BlinkMacSystemFont,'Segoe UI',Roboto;line-height:1.8;color:#333;background:#f9f9f9}.container{max-width:1000px;margin:0 auto;padding:0 20px}section{margin:60px 0}h1{font-size:2.5rem;color:#008080;font-weight:800;margin-bottom:30px}h2{font-size:1.8rem;color:#008080;font-weight:700;margin-top:40px;margin-bottom:20px}.policy-box{background:white;padding:30px;border-radius:8px;border-left:4px solid #90ee90;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:20px}.alert{background:#fff3cd;border-left:4px solid #ff6b6b;padding:20px;border-radius:6px;margin:20px 0}.alert strong{color:#c92a2a}#scroll-to-top{position:fixed;bottom:30px;right:30px;background:#008080;color:white;border:none;padding:12px 16px;border-radius:50px;opacity:0;visibility:hidden;transition:all 0.3s;z-index:99}</style>
+</head>
+<body><div id="header-placeholder"></div><button id="scroll-to-top">↑ Top</button>
+<main id="main-content">
+<section><div class="container"><h1>Disclaimers</h1><p>Important legal disclaimers about our services and information.</p></div></section>
+
+<section><div class="container">
+<div class="alert"><strong>⚠️ Important:</strong> This website provides general information only. It is not legal advice. Always consult with qualified immigration attorneys for your specific situation.</div>
+
+<div class="policy-box"><h2>No Lawyer-Client Relationship</h2><p>Viewing this website does not create an attorney-client relationship. Such relationships are established only through signed engagement agreements.</p></div>
+
+<div class="policy-box"><h2>No Warranty</h2><p>Information on this website is provided "as is" without warranty. While we strive for accuracy, we make no guarantees about completeness or timeliness of information.</p></div>
+
+<div class="policy-box"><h2>Not Legal Advice</h2><p>This website contains general information about Brazilian immigration law. It is not legal advice for your specific situation. Immigration laws change frequently and vary by individual circumstances.</p></div>
+
+<div class="policy-box"><h2>No Guarantee of Outcomes</h2><p>We cannot guarantee immigration approval or specific outcomes. Visa decisions are made by Brazilian government authorities based on your individual qualifications.</p></div>
+
+<div class="policy-box"><h2>Jurisdiction Limitations</h2><p>We provide services related to Brazilian immigration. For matters in other jurisdictions, consult local attorneys.</p></div>
+
+<div class="policy-box"><h2>Third-Party Links</h2><p>This website may contain links to third-party websites. We are not responsible for their content, accuracy, or practices. Use at your own discretion.</p></div>
+
+<div class="policy-box"><h2>Limitation of Liability</h2><p>To the maximum extent permitted by law, we are not liable for damages arising from use or inability to use this website or our services.</p></div>
+
+<div class="policy-box"><h2>Results May Vary</h2><p>Testimonials and past results do not guarantee future success. Each immigration case is unique with different circumstances and outcomes.</p></div>
+</div></section>
+</main><div id="footer-placeholder"></div>
+<script src="js/partials-loader.js"></script>
+<script>
+document.getElementById('header-placeholder').innerHTML = '<div data-partial="header"></div>';
+document.getElementById('footer-placeholder').innerHTML = '<div data-partial="footer"></div>';
+const scrollBtn = document.getElementById('scroll-to-top');
+window.addEventListener('scroll', () => { scrollBtn.style.opacity = scrollBtn.style.visibility = window.pageYOffset > 300 ? '1' : '0'; });
+scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body></html>

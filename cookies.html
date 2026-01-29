@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cookie Policy | Palmas</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system, BlinkMacSystemFont,'Segoe UI',Roboto;line-height:1.8;color:#333;background:#f9f9f9}.container{max-width:1000px;margin:0 auto;padding:0 20px}section{margin:60px 0}h1{font-size:2.5rem;color:#008080;font-weight:800;margin-bottom:30px}h2{font-size:1.8rem;color:#008080;font-weight:700;margin-top:40px;margin-bottom:20px}.policy-box{background:white;padding:30px;border-radius:8px;border-left:4px solid #90ee90;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:20px}.cookie-type{background:#f5f5f5;padding:15px;border-radius:6px;margin:15px 0}.cookie-type strong{color:#008080}#scroll-to-top{position:fixed;bottom:30px;right:30px;background:#008080;color:white;border:none;padding:12px 16px;border-radius:50px;opacity:0;visibility:hidden;transition:all 0.3s;z-index:99}</style>
+</head>
+<body><div id="header-placeholder"></div><button id="scroll-to-top">↑ Top</button>
+<main id="main-content">
+<section><div class="container"><h1>Cookie Policy</h1><p>Information about how we use cookies and similar technologies.</p></div></section>
+
+<section><div class="container">
+<div class="policy-box"><h2>What Are Cookies?</h2><p>Cookies are small text files stored on your device that help websites function and remember your preferences. We use cookies to improve your browsing experience.</p></div>
+
+<div class="policy-box"><h2>Types of Cookies We Use</h2>
+<div class="cookie-type"><strong>Essential Cookies:</strong> Required for website functionality (login sessions, security). Always active.</div>
+<div class="cookie-type"><strong>Performance Cookies:</strong> Collect anonymous data about how you use our site to help us improve it.</div>
+<div class="cookie-type"><strong>Preference Cookies:</strong> Remember your settings (language choice, layout preferences).</div>
+<div class="cookie-type"><strong>Marketing Cookies:</strong> Track your activity for targeted advertising (only with consent).</div>
+</div>
+
+<div class="policy-box"><h2>Third-Party Cookies</h2><p>We use analytics tools (Google Analytics) that set cookies. These are governed by third parties' privacy policies. You can control these in your browser settings.</p></div>
+
+<div class="policy-box"><h2>Your Cookie Choices</h2><p>You can control cookies through your browser settings: Accept/decline cookies, Delete existing cookies, Set preferences for specific sites. Most browsers allow you to refuse cookies or alert you when cookies are being set.</p></div>
+
+<div class="policy-box"><h2>Disabling Cookies</h2><p>Disabling all cookies may affect website functionality. Some features (login, form submission) require cookies to work properly.</p></div>
+
+<div class="policy-box"><h2>Cookie Duration</h2><p>Session cookies expire when you close your browser. Persistent cookies remain for specified periods (typically 1-12 months).</p></div>
+
+<div class="policy-box"><h2>Do Not Track</h2><p>If your browser sends a "Do Not Track" signal, we respect this preference and limit cookie collection for non-essential purposes.</p></div>
+
+<div class="policy-box"><h2>Updates to Policy</h2><p>We may update this cookie policy. Check back periodically for changes. Continued use of our website indicates acceptance of updated policies.</p></div>
+</div></section>
+</main><div id="footer-placeholder"></div>
+<script src="js/partials-loader.js"></script>
+<script>
+document.getElementById('header-placeholder').innerHTML = '<div data-partial="header"></div>';
+document.getElementById('footer-placeholder').innerHTML = '<div data-partial="footer"></div>';
+const scrollBtn = document.getElementById('scroll-to-top');
+window.addEventListener('scroll', () => { scrollBtn.style.opacity = scrollBtn.style.visibility = window.pageYOffset > 300 ? '1' : '0'; });
+scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body></html>
