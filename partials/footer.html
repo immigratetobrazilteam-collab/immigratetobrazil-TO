@@ -1,70 +1,91 @@
-<!-- FOOTER PARTIAL -->
-<footer id="main-footer" role="contentinfo" style="background: linear-gradient(135deg, #20b2aa 0%, #008080 100%); color: white; padding: 60px 20px 20px; margin-top: 100px;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
-      <!-- Company Info -->
-      <div>
-        <h3 style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 700;">Immigration Services</h3>
-        <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 15px;">Expert legal assistance for immigration matters in Palmas and across Brazil. We help families, professionals, and entrepreneurs navigate the immigration process.</p>
-        <div style="display: flex; gap: 10px; margin-top: 15px;">
-          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; transition: all 0.2s;">📘</a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; transition: all 0.2s;">𝕏</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; transition: all 0.2s;">💼</a>
-          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; transition: all 0.2s;">📷</a>
-        </div>
-      </div>
-
-      <!-- Services -->
-      <div>
-        <h4 style="font-size: 1.1rem; margin-bottom: 15px; font-weight: 700;">Services</h4>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="margin-bottom: 10px;"><a href="services/visas.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Work & Business Visas</a></li>
-          <li style="margin-bottom: 10px;"><a href="services/residency.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Residency Permits</a></li>
-          <li style="margin-bottom: 10px;"><a href="services/citizenship.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Citizenship & Naturalization</a></li>
-          <li style="margin-bottom: 10px;"><a href="services/family.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Family Reunification</a></li>
-          <li style="margin-bottom: 10px;"><a href="services/appeals.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Immigration Appeals</a></li>
+<footer id="main-footer" class="main-footer" role="contentinfo">
+  <style>
+    .main-footer {
+      background: linear-gradient(135deg, #006666 0%, #40E0D0 100%);
+      color: white;
+      padding: 60px 40px 20px;
+      margin-top: 80px;
+    }
+    .footer-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h3 {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-section a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+  </style>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html">Work Visas</a></li>
+          <li><a href="services.html">Residency</a></li>
+          <li><a href="services.html">Family Reunification</a></li>
+          <li><a href="services.html">Student Visas</a></li>
         </ul>
       </div>
-
-      <!-- Information -->
-      <div>
-        <h4 style="font-size: 1.1rem; margin-bottom: 15px; font-weight: 700;">Resources</h4>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="margin-bottom: 10px;"><a href="about.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">About Us</a></li>
-          <li style="margin-bottom: 10px;"><a href="about.html#team" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Our Team</a></li>
-          <li style="margin-bottom: 10px;"><a href="blog/" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Blog & News</a></li>
-          <li style="margin-bottom: 10px;"><a href="faq/" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">FAQ</a></li>
-          <li style="margin-bottom: 10px;"><a href="contact.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: all 0.2s;">Contact Us</a></li>
+      <div class="footer-section">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-
-      <!-- Contact -->
-      <div>
-        <h4 style="font-size: 1.1rem; margin-bottom: 15px; font-weight: 700;">Get in Touch</h4>
-        <div style="margin-bottom: 15px;">
-          <p style="margin: 0 0 5px 0; opacity: 0.8; font-size: 0.9rem;">Email</p>
-          <a href="mailto:info@immigratetobrazil.com" style="color: white; text-decoration: none; font-weight: 500;">info@immigratetobrazil.com</a>
-        </div>
-        <div style="margin-bottom: 15px;">
-          <p style="margin: 0 0 5px 0; opacity: 0.8; font-size: 0.9rem;">Phone</p>
-          <a href="tel:+5585-98765-4321" style="color: white; text-decoration: none; font-weight: 500;">+55 85-98765-4321</a>
-        </div>
-        <div>
-          <p style="margin: 0 0 5px 0; opacity: 0.8; font-size: 0.9rem;">Palmas, Brazil</p>
-          <p style="margin: 0; color: rgba(255,255,255,0.7);">Monday - Friday: 9AM - 6PM</p>
-        </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="contact.html">Get in Touch</a></li>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Phone</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
       </div>
     </div>
-
-    <!-- Bottom Footer -->
-    <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px; display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center;">
-      <p style="margin: 0; opacity: 0.7; font-size: 0.9rem;">© 2024-2026 Immigration Services. All rights reserved.</p>
-      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="privacy/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s;">Privacy Policy</a>
-        <a href="terms/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s;">Terms of Service</a>
-        <a href="sitemap.xml" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s;">Sitemap</a>
-      </div>
-      <p style="margin: 0; opacity: 0.7; font-size: 0.9rem;">Made with ❤️ for families</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tocantins Immigration Services. All rights reserved. T</p>
     </div>
   </div>
 </footer>

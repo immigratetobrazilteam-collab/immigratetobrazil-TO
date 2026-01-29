@@ -1,20 +1,102 @@
-<!-- Doctype for standards mode -->
 <!DOCTYPE html>
-<!-- HTML root with English lang -->
 <html lang="en">
-<!-- Head section -->
 <head>
-<!-- UTF-8 encoding -->
     <meta charset="UTF-8">
-<!-- Dynamic title -->
-    <title>Services – Tocantins</title>
-<!-- End head -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Tocantins | Immigrate to Brazil</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        h1 { color: #006666; font-size: 2.5rem; margin: 40px 0; text-align: center; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 50px 0; }
+        .service-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-top: 4px solid #40E0D0; }
+        .service-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .service-icon { font-size: 3rem; margin-bottom: 15px; }
+        .service-title { color: #006666; font-size: 1.3rem; margin-bottom: 10px; }
+        ul { list-style: none; margin: 15px 0; }
+        li { padding: 8px 0; padding-left: 25px; position: relative; }
+        li:before { content: "✓"; position: absolute; left: 0; color: #FFD700; font-weight: bold; }
+        .btn { background: #006666; color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 15px; }
+        .btn:hover { background: #40E0D0; }
+        #scroll-to-top { position: fixed; bottom: 30px; right: 30px; background: #006666; color: white; width: 50px; height: 50px; border: none; border-radius: 50%; cursor: pointer; font-weight: bold; }
+    </style>
 </head>
-<!-- Body -->
 <body>
-<!-- State name heading -->
-    <h1>Tocantins</h1>
-<!-- End body -->
+    <div data-partial="header"></div>
+    <div class="container">
+        <h1>🌊 Our Immigration Services in Tocantins</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <h2 class="service-title">Work Visas (VITEM)</h2>
+                <p>Professional employment visas for qualified workers seeking opportunities in Brazil.</p>
+                <ul>
+                    <li>VITEM I - Isolated Activities</li>
+                    <li>VITEM II - Business Activities</li>
+                    <li>VITEM III - Technical Services</li>
+                </ul>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h2 class="service-title">Residency Permits</h2>
+                <p>Permanent and temporary residency options for investors, retirees, and families.</p>
+                <ul>
+                    <li>Permanent Residency</li>
+                    <li>Temporary Residency</li>
+                    <li>Investor Visas</li>
+                </ul>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👨‍👩‍👧</div>
+                <h2 class="service-title">Family Reunification</h2>
+                <p>Bring your loved ones together through spousal and family visas.</p>
+                <ul>
+                    <li>Spousal Visas</li>
+                    <li>Dependent Visas</li>
+                    <li>Parent Sponsorship</li>
+                </ul>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📚</div>
+                <h2 class="service-title">Student Visas</h2>
+                <p>Complete support for academic pursuits in Brazil.</p>
+                <ul>
+                    <li>University Applications</li>
+                    <li>VITEM IV Processing</li>
+                    <li>Document Preparation</li>
+                </ul>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎭</div>
+                <h2 class="service-title">Artist & Performer Visas</h2>
+                <p>Special visas for cultural and artistic professionals.</p>
+                <ul>
+                    <li>VIART Processing</li>
+                    <li>Cultural Events</li>
+                    <li>Performance Permits</li>
+                </ul>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚖️</div>
+                <h2 class="service-title">Legal Appeals</h2>
+                <p>Professional representation for visa denials and appeals.</p>
+                <ul>
+                    <li>Denial Appeals</li>
+                    <li>Administrative Review</li>
+                    <li>Judicial Proceedings</li>
+                </ul>
+                <a href="contact.html" class="btn">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div data-partial="footer"></div>
+    <button id="scroll-to-top">↑</button>
+    <script src="js/partials-loader.js"></script>
 </body>
-<!-- End HTML -->
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Tocantins | Immigrate to Brazil</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        h1 { color: #006666; font-size: 2.5rem; margin: 40px 0; text-align: center; }
+        .faq-container { margin: 50px 0; }
+        .faq-item { background: white; margin-bottom: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .faq-question { padding: 20px; background: linear-gradient(135deg, #006666 0%, #40E0D0 100%); color: white; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; transition: 0.3s; }
+        .faq-question:hover { background: #40E0D0; }
+        .faq-answer { padding: 20px; display: none; background: white; color: #333; }
+        .faq-item.active .faq-answer { display: block; }
+        .toggle { font-size: 1.5rem; }
+        #scroll-to-top { position: fixed; bottom: 30px; right: 30px; background: #006666; color: white; width: 50px; height: 50px; border: none; border-radius: 50%; opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 99; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div data-partial="header"></div>
+    <div class="container">
+        <h1>🌊 Frequently Asked Questions - Tocantins</h1>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What visa types are available for Tocantins?</span>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We specialize in Work Visas (VITEM), Residency Permits, Family Reunification, Student Visas, Business Visas, and more. Each category has specific requirements.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How long does the visa process take?</span>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Processing times vary between 30 to 180 days depending on visa type and government workload. We'll provide realistic timelines.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What documents do I need?</span>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Required documents vary by visa type but typically include passport, birth certificate, police clearance, financial documents, medical exam, and application form.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I work on a tourist visa?</span>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No, working on a tourist visa is illegal. You need the appropriate work visa (VITEM) with employer sponsorship.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What are your fees?</span>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Fees vary based on case complexity. Contact us for a free consultation and detailed quote. Payment plans available.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-partial="footer"></div>
+    <button id="scroll-to-top">↑</button>
+    <script src="js/partials-loader.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const toggle = q.querySelector('.toggle');
+                item.classList.toggle('active');
+                toggle.textContent = item.classList.contains('active') ? '−' : '+';
+            });
+        });
+    </script>
+</body>
+</html>

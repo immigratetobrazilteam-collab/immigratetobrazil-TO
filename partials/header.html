@@ -1,92 +1,55 @@
-<!-- HEADER PARTIAL -->
 <header id="main-header" class="main-header" role="banner">
   <style>
     .main-header {
-      background: linear-gradient(135deg, #008080 0%, #20b2aa 100%);
+      background: linear-gradient(90deg, #006666 0%, #40E0D0 100%);
       color: white;
-      padding: 0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px 40px;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-
-    .header-top {
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 20px;
-      max-width: 1400px;
-      margin: 0 auto;
-      width: 100%;
-      box-sizing: border-box;
     }
-
     .header-logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 700;
       color: white;
-      font-weight: bold;
-      font-size: 1.3rem;
+      text-decoration: none;
     }
-
-    .header-logo:hover { opacity: 0.9; }
-    .logo-icon { font-size: 1.8rem; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
-    .header-center { flex: 1; display: flex; justify-content: center; margin: 0 40px; }
-    .header-search { display: flex; gap: 8px; background: rgba(255, 255, 255, 0.15); padding: 8px 12px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.2); }
-    .header-search input { background: transparent; border: none; color: white; padding: 6px; width: 200px; outline: none; font-size: 0.95rem; }
-    .header-search input::placeholder { color: rgba(255, 255, 255, 0.7); }
-    .header-search button { background: rgba(255, 255, 255, 0.2); border: none; color: white; cursor: pointer; padding: 4px 12px; border-radius: 4px; font-size: 1rem; transition: background 0.2s; }
-    .header-search button:hover { background: rgba(255, 255, 255, 0.3); }
-    .header-right { display: flex; align-items: center; gap: 20px; }
-    .lang-switcher { display: flex; gap: 8px; }
-    .lang-option { background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid rgba(255, 255, 255, 0.3); padding: 6px 10px; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; text-decoration: none; }
-    .lang-option:hover { background: rgba(255, 255, 255, 0.3); }
-    .lang-option.active { background: #90ee90; }
-    .mobile-menu-btn { display: none; background: rgba(255, 255, 255, 0.2); border: none; color: white; cursor: pointer; padding: 8px 12px; border-radius: 4px; }
-    .nav-menu { display: flex; gap: 5px; list-style: none; margin: 0; padding: 0; }
-    .nav-item a { color: white; text-decoration: none; padding: 8px 15px; border-radius: 4px; transition: all 0.2s; display: block; font-size: 0.95rem; }
-    .nav-item a:hover { background: rgba(255, 255, 255, 0.2); }
-    @media (max-width: 768px) {
-      .header-center { margin: 0; flex-basis: 100%; order: 3; padding: 10px 0; border-top: 1px solid rgba(255, 255, 255, 0.2); }
-      .header-search { width: 100%; box-sizing: border-box; }
-      .header-search input { width: 100%; }
-      .mobile-menu-btn { display: flex; }
-      .nav-menu { display: none; }
+    .nav-menu {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-item a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: opacity 0.3s;
+    }
+    .nav-item a:hover {
+      opacity: 0.8;
     }
   </style>
-
-  <div class="header-top">
-    <a href="index.html" class="header-logo" title="Go to home page">
-      <div class="logo-icon">🌍</div>
-      <span>Palmas Immigration</span>
-    </a>
-    <div class="header-center">
-      <form class="header-search" role="search" method="get" action="/search" aria-label="Search services">
-        <input type="search" name="q" placeholder="Search services, visas..." aria-label="Search" required>
-        <button type="submit" aria-label="Search">🔍</button>
-      </form>
-    </div>
-    <div class="header-right">
-      <div class="lang-switcher">
-        <a href="?lang=en" class="lang-option active" data-lang="en" title="English">EN</a>
-        <a href="?lang=pt" class="lang-option" data-lang="pt" title="Português">PT</a>
-        <a href="?lang=es" class="lang-option" data-lang="es" title="Español">ES</a>
-      </div>
-      <button class="mobile-menu-btn" data-mobile-menu-toggle aria-label="Toggle navigation menu" aria-expanded="false">
-        <span style="width: 24px; height: 2px; background: white; display: block;"></span>
-        <span style="width: 24px; height: 2px; background: white; display: block;"></span>
-        <span style="width: 24px; height: 2px; background: white; display: block;"></span>
-      </button>
-    </div>
+  <div class="header-container">
+    <a href="index.html" class="header-logo">T Tocantins</a>
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="services.html">Services</a></li>
+        <li class="nav-item"><a href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a href="blog.html">Blog</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-
-  <nav class="nav-menu" data-mobile-menu aria-label="Main navigation">
-    <li class="nav-item"><a href="index.html">Home</a></li>
-    <li class="nav-item"><a href="about.html">About Us</a></li>
-    <li class="nav-item"><a href="services/visas.html">Services</a></li>
-    <li class="nav-item"><a href="contact.html">Contact</a></li>
-  </nav>
 </header>
