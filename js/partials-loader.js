@@ -34,6 +34,18 @@
     }
   }
 
+  function getRootPath() {
+    const currentPath = window.location.pathname;
+    const stateMatch = currentPath.match(/\/(ac|al|am|ap|ba|ce|df|es|go|ma|mg|ms|mt|pa|pb|pe|pi|pr|rj|rn|ro|rr|rs|sc|se|sp|to)\//);
+    if (!stateMatch) {
+      return '';
+    }
+    const afterState = currentPath.substring(stateMatch.index + stateMatch[0].length);
+    const pathParts = afterState.split('/').filter(p => p && !p.endsWith('.html'));
+    const depth = pathParts.length;
+    return depth === 0 ? '' : '../'.repeat(depth);
+  }
+
   // ============ DATA-INCLUDE LOADER ============
   async function loadDataInclude(element) {
     const includePath = element.getAttribute('data-include');
@@ -110,6 +122,9 @@
         await loadPartialInto(placeholder, partialName, partialsPath);
       }
     }
+
+    normalizeRelativeLinks();
+    cleanupLayoutArtifacts();
   }
 
   // Helper to load a partial into an element
@@ -196,6 +211,30 @@
         }
       });
     });
+  }
+
+  // Normalize links to use correct depth-relative paths
+  function normalizeRelativeLinks() {
+    const rootPath = getRootPath();
+    const selector = 'a[href], link[href], script[src], img[src]';
+    document.querySelectorAll(selector).forEach(el => {
+      const attr = el.tagName.toLowerCase() === 'script' || el.tagName.toLowerCase() === 'img' ? 'src' : 'href';
+      const value = el.getAttribute(attr);
+      if (!value) return;
+      if (value.startsWith('http') || value.startsWith('//') || value.startsWith('mailto:') || value.startsWith('tel:') || value.startsWith('#')) return;
+      if (value.startsWith('../') || value.startsWith('./')) return;
+      el.setAttribute(attr, rootPath + value);
+    });
+  }
+
+  function cleanupLayoutArtifacts() {
+    document.querySelectorAll('.breadcrumbs').forEach(el => el.remove());
+    document.querySelectorAll('.top-bar').forEach(el => el.remove());
+    document.querySelectorAll('.skip-link, a[href="#main-content"]').forEach(el => el.remove());
+    document.querySelectorAll('nav.mobile-nav').forEach(el => el.remove());
+    if (document.querySelector('header nav')) {
+      document.querySelectorAll('nav.main-nav').forEach(el => el.remove());
+    }
   }
 
   // ============ SCROLL TO TOP ============

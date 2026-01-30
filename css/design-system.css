@@ -198,3 +198,13 @@ footer a { color: white; }
 .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
 .logo { display: flex; align-items: center; gap: 0.5rem; font-size: 1.25rem; }
 
+/* Mobile navigation visibility */
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: block;
+  }
+}
